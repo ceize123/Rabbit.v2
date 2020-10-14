@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&display=swap');
+
 /* * {
   border: solid 2px black;
 } */
@@ -10,9 +12,14 @@ a {
   text-decoration: none;
 }
 
+button {
+  outline: none;
+}
+
 html, body {
   margin: 0;
-  font-family: Noto Sans CJK TC, sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: normal;
 }
 
 body {
@@ -159,8 +166,8 @@ nav ul ul li a:hover {
 }
 
 .bulletin {
-  width: 82%;
-  height: 50vh;
+  width: 80%;
+  height: 450px;
   background-color: #F2D1DA;
   margin-left: 9%;
   margin-top: 20px;
@@ -188,12 +195,129 @@ nav ul ul li a:hover {
 
 .bulletin img {
   text-align: right;
-  width: 47vw;
-  max-width: 650x;
-  height: 37vh;
-
+  width: 46vw;
+  max-width: 650px;
 }
 
 .buinfo {
   margin-left: 4.4%;
+}
+
+.rabIntro {
+  display: flex;
+  margin-top: 100px;
+}
+
+.circleblock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  text-align:center;
+  background-color: #C03178;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 35px;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.expand {
+  font-size: calc(8px + 4 * ((100vw - 320px) / 680));
+}
+
+.expand:focus {
+   transform:scale(1.37);
+   font-size: 18px;
+   /* outline: none; */
+}
+
+.rabImgs {
+  flex: 3;
+  text-align: center;
+}
+
+.rabImgs img {
+  width: 95%;
+  border-radius: 20px;
+}
+
+.rabInfo {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adopt {
+  margin-top: 30px;
+}
+
+.rabInfo h1 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #3E3E3E;
+}
+
+.recBtn {
+  border: none;
+  background-color: #C03178;
+  color: #fff;
+  width: 148px;
+  height: 38px;
+  margin: 12px 6px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.moreInfo {
+  width: 308px;
+  background-color: #fff;
+  color: #000;
+  border: solid 2px #C03178;
+}
+
+.recBlock {
+  width: 359px;
+  text-align: center;
+}
+
+.talkBlock {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.talk {
+  width: 315px;
+  height: 174px;
+  background-color: #F2D1DA;
+  border-radius: 20px;
+  color: #3E3E3E;
+  padding: 18px;
+  font-size: 18px;
+}
+
+.talk p {
+  margin: 10px;
+}
+
+.tri {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 15px 30px 15px 0px;
+  border-color: transparent #F2D1DA transparent transparent;
+  position: absolute;
+  top: 5vw;
+  left: -30px;
 }
