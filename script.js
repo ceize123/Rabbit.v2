@@ -1,15 +1,5 @@
 
 
-// 自動切換
-// let counter = 1;
-// setInterval(function(){
-//   document.getElementById('radio' + counter).checked = true;
-//   counter++;
-//   if(counter > 3) {
-//     counter = 1;
-//   }
-// }, 4000)
-
 // 左右slide
 const slider = document.querySelector('.slider');
 const leftArrow = document.querySelector('.arrowL');
@@ -20,6 +10,10 @@ var sectionIndex = 0;
 function setIndex() {
   document.querySelector('.infoCircle .selected').classList.remove('selected');
   slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)';
+}
+
+function indicatorParentsAdd() {
+  indicatorParents.children[sectionIndex].classList.add('selected');
 }
 
 document.querySelectorAll('.infoCircle li').forEach(function(indicator, ind) {
@@ -34,14 +28,47 @@ document.querySelectorAll('.infoCircle li').forEach(function(indicator, ind) {
 leftArrow.addEventListener('click', function() {
   sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
   setIndex();
-  indicatorParents.children[sectionIndex].classList.add('selected');
+  indicatorParentsAdd();
+  refresh();
 });
 
 rightArrow.addEventListener('click', function() {
   sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
   setIndex();
-  indicatorParents.children[sectionIndex].classList.add('selected');
+  indicatorParentsAdd();
+  refresh();
 });
+
+// 自動切換
+timer3s = setInterval(function(){
+  if(sectionIndex < 2) {
+    sectionIndex++;
+    setIndex();
+    indicatorParentsAdd();
+  }
+  else {
+    sectionIndex = 0;
+    setIndex();
+    indicatorParentsAdd();
+  }
+}, 3000);
+
+// 重新計時
+function refresh() {
+  clearInterval(timer3s);
+  timer3s = setInterval(function(){
+    if(sectionIndex < 2) {
+      sectionIndex++;
+      setIndex();
+      indicatorParentsAdd();
+    }
+    else {
+      sectionIndex = 0;
+      setIndex();
+      indicatorParentsAdd();
+    }
+  }, 3000);
+};
 
 // const slides=document.querySelector(".bulletinBlock").children;
 // const prev=document.querySelector(".prev");
