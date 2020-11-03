@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&display=swap');
+
+/* * {
+  border: solid 2px black;
+} */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: normal;
+  color: #3E3E3E;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #F2D1DA;
+}
+
+.container {
+width: 1600px;
+position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 106px;
+}
+
+.logo {
+  padding-left: 2.77%;
+  padding-top: 15px;
+}
+
+.logo img {
+  width: 111px;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+  padding-right: 4.24%;
+  z-index: 999;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin-left: 45px;
+}
+
+nav ul li a {
+  color: #880744;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 680));
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+nav ul ul {
+  position: absolute;
+  margin-top: 8px;
+  left: 20px;
+  padding: 8px 15px;
+  background: #FFF8F8;
+  border: 1px solid #939393;
+  border-radius: 10px;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0;
+  padding: 5px;
+  display: list-item;
+}
+
+nav ul ul li a{
+  color: #3e3e3e;
+}
+
+.navbar ul li:hover > ul {
+  visibility: visible;
+}
+
+nav ul ul li a:hover {
+  color: #C03178;
+}
+
+.category {
+  margin: 2.9vh 0 3vh 3.1%;
+  font-size: calc(12px + 4 * ((100vw - 1200px) / 500));
+  letter-spacing: 0.05em;
+}
+
+.rabInfo {
+  display: flex;
+}
+
+.rabImg {
+  padding-left: 3.1%;
+  flex:52.8;
+}
+
+.rabInfo img {
+  width: 100%;
+  max-width: 795px;
+}
+
+.adoptInfo {
+  flex: 47.2;
+  padding-left: 5.48%;
+}
+
+.adoptInfo h2 {
+  font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
+  margin: 4.7% 0 5.1% 17px;
+  font-weight: 400;
+}
+
+.infoUl ul {
+  padding: 0;
+  margin: 0;
+}
+
+.infoUl ul li {
+  font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
+  display: inline-block;
+}
+
+.infoUl ul li:not(:last-child) {
+  margin-bottom: 4.19%;
+}
+
+.width45 {
+  width: 45%;
+}
+
+.infoUl li::before {
+  content: '\25cf';
+  color: #C03178;
+  font-size: 11px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.character {
+  width: 90.6%;
+  margin-top: 15px;
+  margin-left: 6px;
+  background-color: #F2D1DA;
+}
+
+.character p {
+  font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
+  padding: 30px;
+  letter-spacing: 0.08em;
+  line-height: 170.19%;
+  margin: auto;
+}
+
+.infoUl {
+  position: relative;
+  height: 82.5%;
+}
+
+.purpleInput {
+  border: solid #C03178;
+  width: 16.45vw;
+  height: 6.2vw;
+  max-width: 263px;
+  max-height: 100px;
+  background-color: #C03178;
+  box-shadow: 0px 4px 3px rgba(162, 91, 119, 0.5);
+  border-radius: 1.5vw;
+  cursor: pointer;
+  font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin: 0;
+  color: #fff;
+}
+
+.poaInput {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-58%);
+}
+
+/* section2 */
+
+.section2 {
+  margin: 15vh 3.1% 0 3.1%;
+}
+
+.happen {
+  background-color: #F2D1DA;
+  font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
+  padding: 30px 40px;
+  line-height: 43px;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.6vh;
+}
+
+.section2 p {
+  margin: 0;
+  font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
+}
+
+.section2 ul {
+  margin: 0;
+}
+
+.section2 ul li {
+  font-size: calc(16px + 4 * ((100vw - 1200px) / 500));
+}
+
+.healthRecord p {
+  padding-bottom: 4px;
+  padding-top: 2vh;
+}
+
+.healthTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+  cursor: pointer;
+}
+
+.healthRecord ul {
+  margin-left: 1.17%;
+  padding: 0;
+}
+
+.healthRecord ul li:first-child {
+  margin-top: 1.18vh;
+}
+
+.healthRecord ul li {
+  letter-spacing: 0.08em;
+  line-height: 23px;
+}
+
+.healthRecord li::before {
+  content: '\25cf';
+  color: #000;
+  font-size: 11px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.hiddenList {
+  display: none;
+}
+
+.model {
+  margin-top: 5vh;
+}
+
+.modelpic {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.arrow1, .arrow2 {
+  position: absolute;
+  top: 32%;
+  cursor: pointer;
+}
+
+.arrow2 {
+  right: 0;
+}
+
+.pic1, .pic2 {
+  width: 45%;
+  background-color: #F2D1DA;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 1.1vh;
+}
+
+.pic1 {
+  margin-left: 3.1%;
+}
+
+.pic2 {
+  margin-right: 3.1%;
+}
+
+.modelpic p {
+  padding-bottom: 4.88vh;
+}
+
+.modelpic img {
+  width: 94.6%;
+  padding: 10.4vh 0 4.68vh 0;
+}
+
+.modelInput {
+  display: flex;
+  justify-content: center;
+  margin: 7.4vh 0;
+  font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  background-color: #F2D1DA;
+}
+
+.leftFooter {
+  padding-left: 3.8%;
+  padding-top: 41px;
+  height: 210px;
+  flex: 5.5;
+  margin-bottom: 20px;
+}
+
+.leftFooter p {
+  margin: 0;
+  color: #3E3E3E;
+  line-height: 30px;
+  letter-spacing: 0.2em;
+  font-size: calc(15px + 3 * ((100vw - 1200px) / 500));
+}
+
+.leftFooter img {
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.rightFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 4.5;
+  padding-right: 4.6%;
+}
+
+.rightFooter img{
+  max-width: 152px;
+}
+
+.rightFooter button, .rightFooter input {
+  border: solid #fff;
+  font-size: calc(12px + 4 * ((100vw - 1200px) / 500));
+  max-width: 126px;
+  max-height: 48px;
+  width: 8.7vw;
+  height: 48px;
+  background-color: #fff;
+  box-shadow: 0px 4px 3px rgba(162, 91, 119, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 26px 5.5px 0 5.5px;
+}
+
+.whiteBtn a {
+  color: #3E3E3E;
+}
+
+/* font-size */
+
+@media screen and (min-width: 2000px) {
+  .adoptInfo h2 {
+     font-size: 40px;
+  }
+
+  .infoUl ul li {
+    font-size: 28px;
+  }
+
+  .section2 ul li {
+    font-size: 22px;
+  }
+
+  .section p {
+    font-size: 28px;
+  }
+
+  .category p {
+    font-size: 18px;
+  }
+
+  .purpleInput {
+    font-size: 40px;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
+
+  .footer button, .footer input {
+    font-size: 18px;
+  }
+}

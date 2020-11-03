@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+/* * {
+  border: solid 2px black;
+} */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: normal;
+  color: #3E3E3E;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #F2D1DA;
+}
+
+.container {
+width: 1600px;
+position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 106px;
+}
+
+.logo {
+  padding-left: 2.77%;
+  padding-top: 15px;
+}
+
+.logo img {
+  width: 111px;
+  height: 65px;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+  padding-right: 4.24%;
+  z-index: 999;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin-left: 45px;
+}
+
+nav ul li a {
+  color: #880744;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 680));
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+nav ul ul {
+  position: absolute;
+  margin-top: 8px;
+  left: 20px;
+  padding: 8px 15px;
+  background: #FFF8F8;
+  border: 1px solid #939393;
+  border-radius: 10px;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0;
+  padding: 5px;
+  display: list-item;
+}
+
+nav ul ul li a{
+  color: #3e3e3e;
+}
+
+.navbar ul li:hover > ul {
+  visibility: visible;
+}
+
+nav ul ul li a:hover {
+  color: #C03178;
+}
+
+/* mustKnow */
+
+.category {
+  font-size: calc(12px + 4 * ((100vw - 1200px) / 500));
+  margin: 2.9vh 0 2.3vh 3.1%;
+  letter-spacing: 0.08em;
+}
+
+.titleBar {
+  background-color: #F2D1DA;
+  text-align: center;
+  font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
+  padding: 7px 0;
+  letter-spacing: 0.08em;
+}
+
+.infoBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftInfo {
+  width: 500px;
+  margin-left: 7.6%;
+}
+
+.rightInfo {
+  margin-right: 7.6%;
+}
+
+.infoBlock p {
+  font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
+  padding-left: 22px;
+}
+
+.infoBlock li {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.infoBlock ol li {
+  margin-top: 10px;
+}
+
+/* freQues */
+
+.freQues {
+  margin: 0 3.47%;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+  cursor: pointer;
+}
+
+.question p {
+  margin: 2.4vh 0 3px 3%;
+  font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
+  letter-spacing: 0.08em;
+}
+
+.answer p {
+  font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
+  margin: 0;
+  padding: 0;
+  margin-left: 3.4%;
+}
+
+.hiddenList {
+  display: none;
+}
+
+.purpleInput {
+  border: solid #C03178;
+  width: 16.45vw;
+  height: 6.2vw;
+  max-width: 263px;
+  max-height: 100px;
+  background-color: #C03178;
+  box-shadow: 0px 4px 3px rgba(162, 91, 119, 0.5);
+  border-radius: 1.5vw;
+  cursor: pointer;
+  font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin: 0;
+  color: #fff;
+}
+
+.InfoInput {
+  display: flex;
+  justify-content: center;
+  margin-top: 5.66vh;
+  margin-bottom: 3.6vh;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  background-color: #F2D1DA;
+}
+
+.leftFooter {
+  padding-left: 3.8%;
+  padding-top: 41px;
+  height: 210px;
+  flex: 5.5;
+  margin-bottom: 20px;
+}
+
+.leftFooter p {
+  margin: 0;
+  color: #3E3E3E;
+  line-height: 30px;
+  letter-spacing: 0.2em;
+  font-size: calc(15px + 3 * ((100vw - 1200px) / 500));
+}
+
+.leftFooter img {
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.rightFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 4.5;
+  padding-right: 4.6%;
+}
+
+.rightFooter img{
+  max-width: 152px;
+}
+
+.rightFooter button, .rightFooter input {
+  border: solid #fff;
+  font-size: calc(12px + 4 * ((100vw - 1200px) / 500));
+  max-width: 126px;
+  max-height: 48px;
+  width: 8.7vw;
+  height: 48px;
+  background-color: #fff;
+  box-shadow: 0px 4px 3px rgba(162, 91, 119, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 26px 5.5px 0 5.5px;
+}
+
+.whiteBtn a {
+  color: #3E3E3E;
+}
+
+/* font-size */
+
+@media screen and (min-width: 2000px) {
+  .category p {
+    font-size: 18px;
+  }
+
+  .titleBar p {
+    font-size: 40px;
+  }
+
+  .infoBlock li {
+    font-size: 17px;
+  }
+
+  .mustKnow, .freQues p {
+    font-size: 28px;
+  }
+
+
+  .answer p {
+    font-size: 28px;
+  }
+
+  .purpleBtn {
+    font-size: 40px;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
+
+  .footer button, .footer input {
+    font-size: 18px;
+  }
+}
