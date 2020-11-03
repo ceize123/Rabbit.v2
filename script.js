@@ -1,12 +1,19 @@
 
 
-// 左右slide
+// 定義slide
 const slider = document.querySelector('.slider');
 const leftArrow = document.querySelector('.arrowL');
 const rightArrow = document.querySelector('.arrowR');
 const indicatorParents = document.querySelector('.infoCircle ul');
 var sectionIndex = 0;
 
+// 定義圓圈
+const rabSlide = document.querySelectorAll('.rabSlider');
+const indicatorParents2 = document.querySelector('.circleBlock');
+var circleIndex = 0;
+
+
+// slide
 function setIndex() {
   document.querySelector('.infoCircle .selected').classList.remove('selected');
   slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)';
@@ -22,9 +29,11 @@ document.querySelectorAll('.infoCircle li').forEach(function(indicator, ind) {
     // 這邊setIndex一定要在add前面，不然剛add的'selected'也會被remove
     setIndex();
     indicator.classList.add('selected');
+    refresh();
   });
 });
 
+// slide--箭頭
 leftArrow.addEventListener('click', function() {
   sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
   setIndex();
@@ -39,8 +48,8 @@ rightArrow.addEventListener('click', function() {
   refresh();
 });
 
-// 自動切換
-timer3s = setInterval(function(){
+// 自動切換1
+timer1 = setInterval(function(){
   if(sectionIndex < 2) {
     sectionIndex++;
     setIndex();
@@ -53,10 +62,10 @@ timer3s = setInterval(function(){
   }
 }, 3000);
 
-// 重新計時
+// 重新計時1
 function refresh() {
-  clearInterval(timer3s);
-  timer3s = setInterval(function(){
+  clearInterval(timer1);
+  timer1 = setInterval(function(){
     if(sectionIndex < 2) {
       sectionIndex++;
       setIndex();
@@ -70,44 +79,67 @@ function refresh() {
   }, 3000);
 };
 
-// const slides=document.querySelector(".bulletinBlock").children;
-// const prev=document.querySelector(".prev");
-// const next=document.querySelector(".next");
-// let index=0;
-//
-//
-//   prev.addEventListener("click",function(){
-//     prevSlide();
-//   })
-//
-//   next.addEventListener("click",function(){
-//     nextSlide();
-//   })
-//
-//
-//   function prevSlide(){
-//     if(index==0){
-//       index=slides.length-1;
-//     }
-//     else{
-//       index--;
-//     }
-//     changeSlide();
-//   }
-//
-//   function nextSlide(){
-//     if(index==slides.length-1){
-//       index=0;
-//     }
-//     else{
-//       index++;
-//     }
-//     changeSlide();
-//   }
-//
-//   function changeSlide(){
-//       for(let i=0; i<slides.length; i++){
-//         slides[i].classList.remove("active");
-//       }
-//     slides[index].classList.add("active");
-//   }
+
+// disapear
+function setIndex2() {
+  document.querySelector('.circleBlock .circleSelected').classList.remove('circleSelected');
+}
+
+function disapear() {
+  for (i=0; i < rabSlide.length; i++) {
+    rabSlide[i].classList.add('notActive');
+  }
+}
+
+document.querySelectorAll('.circleBlock button').forEach(function(indicator2, ind2) {
+  indicator2.addEventListener('click', function(){
+    circleIndex = ind2;
+    disapear();
+    setIndex2();
+    refresh2();
+    if(ind2 < 3) {
+      indicator2.classList.add('circleSelected');
+      rabSlide[circleIndex].classList.remove('notActive');
+    };
+  });
+});
+
+function indicatorParentsAdd2() {
+  indicatorParents2.children[circleIndex].classList.add('circleSelected');
+  rabSlide[circleIndex].classList.remove('notActive');
+}
+
+// 自動切換2
+timer2 = setInterval(function(){
+  if(circleIndex < 2) {
+    circleIndex++;
+    disapear();
+    setIndex2();
+    indicatorParentsAdd2();
+  }
+  else {
+    circleIndex = 0;
+    disapear();
+    setIndex2();
+    indicatorParentsAdd2();
+  }
+}, 3000);
+
+// 重新計時2
+function refresh2() {
+  clearInterval(timer2);
+  timer2 = setInterval(function(){
+    if(circleIndex < 2) {
+      circleIndex++;
+      disapear();
+      setIndex2();
+      indicatorParentsAdd2();
+    }
+    else {
+      circleIndex = 0;
+      disapear();
+      setIndex2();
+      indicatorParentsAdd2();
+    }
+  }, 3000);
+};

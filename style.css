@@ -28,14 +28,13 @@ body {
   overflow-x: hidden;
 }
 
-.pink {
-  width: 200vw;
+/* .pink {
+  width: 100vw;
   height: 100vh;
   background-color: #F2D1DA;
   position: absolute;
   z-index: -999;
-  left: -20vw;
-}
+} */
 
 .header {
   background-color: #F2D1DA;
@@ -141,27 +140,28 @@ nav ul ul li a:hover {
 }
 
 .title img {
-  max-width: 605px;
+  max-width: 672px;
   width: 42vw;
 }
 
 .purpleInput {
   border: solid #C03178;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: calc(14px + 5 * ((100vw - 320px) / 680));
-  max-width: 174px;
-  max-height: 66px;
-  width: 15vw;
-  height: 5vw;
+  width: 12.08vw;
+  max-width: 193px;
+  max-height: 73px;
   background-color: #C03178;
   box-shadow: 0px 4px 3px rgba(162, 91, 119, 0.5);
-  border-radius: 1vw;
-  margin-left: 17vw;
+  border-radius: 20px;
+  padding-top: 2.3%;
+  padding-bottom: 2.3%;
   margin-top: 50px;
   cursor: pointer;
   color: #fff;
+}
+
+.section1 .purpleInput {
+  margin-left: 17vw;
 }
 
 /* section2 */
@@ -180,10 +180,6 @@ nav ul ul li a:hover {
   height: 50%;
   margin-left: 8.9%;
   border-radius: 30px;
-}
-
-.section2 input {
-  display: none;
 }
 
 .bulletinBlock {
@@ -379,16 +375,19 @@ nav ul ul li a:hover {
 .rabIntro {
   display: flex;
   margin-top: 13.38vh;
+  justify-content: center;
 }
 
-.circleblock {
-  flex: 1;
+.circleBlock {
   display: flex;
+  flex: 17.08;
   flex-direction: column;
   align-items: center;
+  margin-top: -25px;
+  margin-left: 7.2%;
 }
 
-.circle {
+.circle, .circle input {
   width: 103px;
   height: 103px;
   border-radius: 50%;
@@ -397,25 +396,29 @@ nav ul ul li a:hover {
   color: #fff;
   border: none;
   font-size: 14px;
-  margin-bottom: 35px;
-  margin-left: 30px;
+  margin-bottom: 33px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.expand {
-  font-size: calc(9px + 4 * ((100vw - 320px) / 680));
+.circleBlock .circleSelected{
+  transform:scale(1.37);
+  font-size: 24px;
+  letter-spacing: 0.18em;
 }
 
-.expand:focus {
-   transform:scale(1.37);
-   font-size: 18px;
-   letter-spacing: 0.18em;
+.rabSlider {
+  display: flex;
+  flex:82.92;
+}
+
+.notActive {
+  display: none;
 }
 
 .rabImgs {
-  flex: 3;
   text-align: center;
+  flex: 62.31;
 }
 
 .rabImgs img {
@@ -424,14 +427,14 @@ nav ul ul li a:hover {
 }
 
 .rabInfo {
-  flex: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 37.69;
 }
 
 .adoptInput {
-  margin-top: 30px;
+  margin-top: 3.6vh;
 }
 
 .rabInfo p {
@@ -509,6 +512,7 @@ nav ul ul li a:hover {
 .footer {
   display: flex;
   background-color: #F2D1DA;
+  margin-top: 4.57vh;
 }
 
 .leftFooter {
