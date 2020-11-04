@@ -96,7 +96,7 @@
               <p>兔兔健康紀錄</p>
               <img class="drop" src="../images/兔兔個案說明/向下展開按鈕.svg" alt="">
             </div>
-            <ul>
+            <ul class="toggleUl">
               <li>2020/09/09 狀況良好已拆線，不須回診(隔日再拆頭套)</li>
               <li>2020/09/02 胸口下發現有腫塊，切除腹部腫塊送驗。</li>
               <li>2020/06/10 左眼流淚狀況給予人工淚液維護，鼻淚管狀況良好。</li>
@@ -157,8 +157,17 @@
   </body>
   <script>
     $(document).ready(function() {
+      let counter = 1;
       $(".healthTitle").click(function() {
         $("li.start").nextUntil(".model").slideToggle();
+        if (counter == 1) {
+          $("ul.toggleUl").addClass("healthScroll");
+          counter++;
+        }
+        else {
+          $("ul.toggleUl").removeClass("healthScroll");
+          counter = 1;
+        };
       });
     });
 	</script>
