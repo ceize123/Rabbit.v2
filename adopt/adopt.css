@@ -213,6 +213,10 @@ input[type="checkbox"]:checked:after {
   letter-spacing: 0.05em;
 }
 
+.category a {
+  color: #3E3E3E;
+}
+
 .section1Right > p {
   padding: 3vh 0 1.3vh 45px;
 }

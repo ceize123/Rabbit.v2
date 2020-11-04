@@ -114,9 +114,13 @@ nav ul ul li a:hover {
 /* mustKnow */
 
 .category {
-  font-size: calc(12px + 4 * ((100vw - 1200px) / 500));
+  font-size: 14px;
   margin: 2.9vh 0 2.3vh 3.1%;
   letter-spacing: 0.08em;
+}
+
+.category a {
+  color: #3E3E3E;
 }
 
 .titleBar {
@@ -180,6 +184,7 @@ nav ul ul li a:hover {
   margin: 0;
   padding: 0;
   margin-left: 3.4%;
+  letter-spacing: 0.08em;
 }
 
 .hiddenList {
@@ -272,10 +277,6 @@ nav ul ul li a:hover {
 /* font-size */
 
 @media screen and (min-width: 2000px) {
-  .category p {
-    font-size: 18px;
-  }
-
   .titleBar p {
     font-size: 40px;
   }
@@ -287,7 +288,6 @@ nav ul ul li a:hover {
   .mustKnow, .freQues p {
     font-size: 28px;
   }
-
 
   .answer p {
     font-size: 28px;

@@ -111,8 +111,12 @@ nav ul ul li a:hover {
 
 .category {
   margin: 2.9vh 0 3vh 3.1%;
-  font-size: calc(12px + 4 * ((100vw - 1200px) / 500));
+  font-size: 14px;
   letter-spacing: 0.05em;
+}
+
+.category a {
+  color: #3E3E3E;
 }
 
 .rabInfo {
@@ -138,6 +142,7 @@ nav ul ul li a:hover {
   font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
   margin: 4.7% 0 5.1% 17px;
   font-weight: 400;
+  letter-spacing: 0.08em;
 }
 
 .infoUl ul {
@@ -148,6 +153,7 @@ nav ul ul li a:hover {
 .infoUl ul li {
   font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
   display: inline-block;
+  letter-spacing: 0.08em;
 }
 
 .infoUl ul li:not(:last-child) {
@@ -197,7 +203,6 @@ nav ul ul li a:hover {
   border-radius: 1.5vw;
   cursor: pointer;
   font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
-  font-weight: 300;
   letter-spacing: 0.08em;
   margin: 0;
   color: #fff;
@@ -235,7 +240,7 @@ nav ul ul li a:hover {
 }
 
 .section2 ul li {
-  font-size: calc(16px + 4 * ((100vw - 1200px) / 500));
+  font-size: 18px;
 }
 
 .healthRecord p {
@@ -256,12 +261,12 @@ nav ul ul li a:hover {
 }
 
 .healthRecord ul li:first-child {
-  margin-top: 1.18vh;
+  margin-top: 20px;
 }
 
 .healthRecord ul li {
   letter-spacing: 0.08em;
-  line-height: 23px;
+  line-height: 27px;
 }
 
 .healthRecord li::before {
@@ -276,20 +281,18 @@ nav ul ul li a:hover {
   display: none;
 }
 
-.healthScroll {
-  height: 260px;
-  overflow: auto;
-}
-
 .healthScroll::-webkit-scrollbar {
-  width: 1.5%;
-
+  width: 22px;
 }
 
 .healthScroll::-webkit-scrollbar-thumb {
   background-color: #C03178;
-  outline: 1px solid ;
   border-radius: 20px;
+}
+
+.healthScroll {
+  height: 310px;
+  overflow: auto;
 }
 
 .model {
@@ -344,7 +347,6 @@ nav ul ul li a:hover {
   font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
   font-weight: 300;
   letter-spacing: 0.08em;
-  margin: 0;
 }
 
 /* footer */
@@ -423,10 +425,6 @@ nav ul ul li a:hover {
 
   .section p {
     font-size: 28px;
-  }
-
-  .category p {
-    font-size: 18px;
   }
 
   .purpleInput {

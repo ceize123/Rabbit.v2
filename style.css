@@ -19,6 +19,7 @@ button {
 html, body {
   margin: 0;
   font-family: 'Noto Sans TC', sans-serif;
+  -webkit-font-family: 'Noto Sans TC', sans-serif;
   font-weight: normal;
 }
 
@@ -402,9 +403,9 @@ nav ul ul li a:hover {
 }
 
 .circleBlock .circleSelected{
-  transform:scale(1.37);
-  font-size: 24px;
-  letter-spacing: 0.18em;
+  transform:scale(1.38);
+  font-size: 17.39px;
+  letter-spacing: 0.14em;
 }
 
 .rabSlider {
@@ -445,7 +446,7 @@ nav ul ul li a:hover {
   font-size: 36px;
 }
 
-.recBtn {
+.recBtn, .recBlock input {
   border: none;
   background-color: #C03178;
   color: #fff;
@@ -458,13 +459,14 @@ nav ul ul li a:hover {
   font-weight: 300;
 }
 
-.moreInfo {
+.recBlock input {
   width: 308px;
   background-color: #fff;
   color: #3e3e3e;
   border: solid 2px #C03178;
   margin: 0;
   margin-top: 13px;
+  text-align: center;
 }
 
 .recBlock {

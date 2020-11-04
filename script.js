@@ -79,6 +79,15 @@ function refresh() {
   }, 3000);
 };
 
+// hover停止slide
+$('.bulletinBlock').mouseover(function(){
+  clearInterval(timer1);
+});
+
+$('.bulletinBlock').mouseout(function(){
+  refresh();
+});
+
 
 // disapear
 function setIndex2() {
@@ -143,3 +152,12 @@ function refresh2() {
     }
   }, 3000);
 };
+
+// hover停止slide
+$('.circle, .mouseoverImg, .recBtn, .talk').mouseover(function(){
+  clearInterval(timer2);
+});
+
+$('.circle, .mouseoverImg, .recBtn, .talk').mouseout(function(){
+  refresh2();
+});
