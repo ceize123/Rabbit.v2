@@ -114,18 +114,26 @@
           </div>
           <div class="model">
             <p>兔兔麻豆照</p>
-              <div class="modelpic">
-                <div class="pic1">
-                  <img src="../images/兔兔個案說明/兔兔個案說明-麻豆照-596x549.png.png" alt="">
-                  <p>我是個內向害羞的小淑女～</p>
-                </div>
-                <div class="pic2">
-                  <img src="../images/兔兔個案說明/兔兔個案說明-麻豆照2-596x549.png.png" alt="">
-                  <p>志工姊姊說要站挺挺，不能駝背！</p>
+            <div class="modelBlock">
+              <div class="arrow">
+                <div class="modelpic">
+                  <div class="imgBlock">
+                    <img src="../images/兔兔個案說明/兔兔個案說明-麻豆照-596x549.png.png" alt="">
+                    <p>我是個內向害羞的小淑女～</p>
+                  </div>
+                  <div class="imgBlock">
+                    <img src="../images/兔兔個案說明/兔兔個案說明-麻豆照2-596x549.png.png" alt="">
+                    <p>志工姊姊說要站挺挺，不能駝背！</p>
+                  </div>
+                  <div class="imgBlock">
+                    <img src="../images/兔兔個案說明/兔兔個案說明-麻豆照2-596x549.png.png" alt="">
+                    <p>志工姊姊說要站挺挺，不能駝背！</p>
+                  </div>
                 </div>
                 <div class="arrow1"><img src="../images/Landingpage/left button.svg" alt=""></div>
                 <div class="arrow2"><img src="../images/Landingpage/right button.svg" alt=""></div>
               </div>
+            </div>
             <div class="modelInput"><input class="purpleInput" type="button" value="我要認養" onclick="location.href='../info/info.html'"></div>
           </div>
         </div>
@@ -155,20 +163,7 @@
       </div>
     </div>
   </body>
-  <script>
-    $(document).ready(function() {
-      let counter = 1;
-      $(".healthTitle").click(function() {
-        $("li.start").nextUntil(".model").slideToggle();
-        if (counter == 1) {
-          $("ul.toggleUl").addClass("healthScroll");
-          counter++;
-        }
-        else {
-          $("ul.toggleUl").removeClass("healthScroll");
-          counter = 1;
-        };
-      });
-    });
+  <script src="model.js">
+
 	</script>
 </html>

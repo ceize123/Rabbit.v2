@@ -299,36 +299,51 @@ nav ul ul li a:hover {
   margin-top: 5vh;
 }
 
-.modelpic {
+.modelBlock {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.arrow {
   position: relative;
+  margin-top: 1.1vh;
+  width: 92vw;
+  max-width: 1456px;
+  /* border: 1px solid; */
 }
 
 .arrow1, .arrow2 {
   position: absolute;
-  top: 32%;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
-.arrow2 {
-  right: 0;
+.arrow1 {
+  left: -30px;
 }
 
-.pic1, .pic2 {
+.arrow2 {
+  right: -30px;
+}
+
+.modelpic {
+  display: flex;
+  justify-content: center;
+  width: 152%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.imgBlock {
   width: 45%;
   background-color: #F2D1DA;
   text-align: center;
   border-radius: 30px;
-  margin-top: 1.1vh;
 }
 
-.pic1 {
+.imgBlock:not(:first-child) {
   margin-left: 3.1%;
-}
-
-.pic2 {
-  margin-right: 3.1%;
 }
 
 .modelpic p {
