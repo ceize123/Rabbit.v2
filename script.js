@@ -161,3 +161,23 @@ $('.circle, .mouseoverImg, .recBtn, .talk').mouseover(function(){
 $('.circle, .mouseoverImg, .recBtn, .talk').mouseout(function(){
   refresh2();
 });
+
+
+// hamburger
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".navbar");
+const links = document.querySelectorAll(".navbar ul li");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+});
+
+$(document).ready(function(){
+  $('.navBtn').click(function(){
+    $(this).next('nav ul .navToggle').slideToggle();
+    $(this).children('span').toggleClass('rotate');
+  });
+});
