@@ -361,7 +361,6 @@ nav ul ul li a:hover {
     border-radius: 30px;
     visibility: visible;
     display: none;
-    transition: all 0.2s ease-out;
     letter-spacing: 0.08em;
   }
 
