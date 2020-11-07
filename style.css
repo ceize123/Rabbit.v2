@@ -218,19 +218,9 @@ nav ul ul li a:hover {
     overflow: auto;
   }
 
-  .navbar::-webkit-scrollbar {
-    width: 22px;
-  }
-
-  .navbar::-webkit-scrollbar-thumb {
-    background-color: #C03178;
-    border-radius: 20px;
-  }
-
-
   .navbar.open {
     clip-path: circle(50px at 90% -10%);
-    -webkit-clip-path: circle(1600px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% -10%);
     pointer-events: all;
   }
 
@@ -293,6 +283,10 @@ nav ul ul li a:hover {
     margin-top: 5.8vh;
   }
 
+  nav > ul > li:last-child {
+    margin-bottom: 50px;
+  }
+
   nav ul ul li {
     padding: 0;
   }
@@ -326,6 +320,22 @@ nav ul ul li a:hover {
     display: block;
     cursor: pointer;
     padding-right: 45px;
+  }
+
+  .hamburger div:nth-child(1) {
+    transition: all 1s ease 0.05s;
+  }
+
+  .hamburger div:nth-child(2) {
+    transition: all 1s ease 0.1s;
+  }
+
+  .hamburger div:nth-child(3) {
+    transition: all 1s ease 0.15s;
+  }
+
+  .line.purpleToggle {
+    background-color: #C03178;
   }
 
   .line {
