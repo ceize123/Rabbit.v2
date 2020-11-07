@@ -322,7 +322,7 @@ nav ul ul li a:hover {
     padding-right: 45px;
   }
 
-  .hamburger div:nth-child(1) {
+  /* .hamburger div:nth-child(1) {
     transition: all 1s ease 0.05s;
   }
 
@@ -332,7 +332,7 @@ nav ul ul li a:hover {
 
   .hamburger div:nth-child(3) {
     transition: all 1s ease 0.15s;
-  }
+  } */
 
   .line.purpleToggle {
     background-color: #C03178;
@@ -373,6 +373,10 @@ nav ul ul li a:hover {
     margin: 0;
     padding: 0;
     display: list-item;
+  }
+
+  nav ul ul li:not(:first-child) {
+    padding-top: 5px;
   }
 
   nav ul ul li a{
