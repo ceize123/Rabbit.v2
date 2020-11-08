@@ -209,16 +209,16 @@ gesuredZone.addEventListener('touchend', function(event) {
 }, false);
 
 function handleGesure() {
-    if (touchendX < touchstartX) {
-      sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
-      setIndex();
-      indicatorParentsAdd();
-      refresh();
-    };
-    if (touchendX > touchstartX) {
-      sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
-      setIndex();
-      indicatorParentsAdd();
-      refresh();
-    };
+  if (touchendX > touchstartX) {
+    sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
+    setIndex();
+    indicatorParentsAdd();
+    refresh();
+  };
+  if (touchendX < touchstartX) {
+    sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
+    setIndex();
+    indicatorParentsAdd();
+    refresh();
+  };
 };
