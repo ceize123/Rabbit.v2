@@ -200,11 +200,11 @@ var touchendX = 0;
 var gesuredZone = document.querySelector('.uppersection2');
 
 gesuredZone.addEventListener('touchstart', function(event) {
-    touchstartX = event.screenX;
+    touchstartX = event.changedTouches[0].screenX;
 }, false);
 
 gesuredZone.addEventListener('touchend', function(event) {
-    touchendX = event.screenX;
+    touchendX = event.changedTouches[0].screenX;
     handleGesure();
 }, false);
 
