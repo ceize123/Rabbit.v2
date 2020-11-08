@@ -201,11 +201,13 @@ var gesuredZone = document.querySelector('.uppersection2');
 
 gesuredZone.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;
+    clearInterval(timer1);
 }, false);
 
 gesuredZone.addEventListener('touchend', function(event) {
     touchendX = event.changedTouches[0].screenX;
     handleGesure();
+    refresh();
 }, false);
 
 function handleGesure() {
@@ -219,11 +221,6 @@ function handleGesure() {
     sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
     setIndex();
     indicatorParentsAdd();
-    refresh();
-  };
-
-  if (touchendX == touchstartX) {
-    clearInterval(timer1);
     refresh();
   };
 };
