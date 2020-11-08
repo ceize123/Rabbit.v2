@@ -6,6 +6,7 @@
     <title>兔兔個案說明</title>
     <link rel="stylesheet" href="model.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/Landingpage/logo no word1.svg" type="image/x-icon" / >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
@@ -15,54 +16,60 @@
         <div class="menu">
           <div class="logo">
             <a href="../index.html"><img src="../images/Landingpage/LOGO.png" alt="logo"/></a>
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
           </div>
-            <nav class="navbar">
-              <ul>
-                <li class="nav"><a href="#">關於</a>
-                  <ul>
-                    <li><a href="#">概述</a></li>
-                    <li><a href="#">Q&A</a></li>
-                    <li><a href="#">工作報告</a></li>
-                  </ul>
-                </li>
-                <li><a href="../adopt/adopt.html" class="nav">認養</a></li>
-                <li><a href="#" class="nav">捐款/捐物</a>
-                  <ul>
-                    <li><a href="#">單次捐款</li>
-                    <li><a href="#">助養定期定額</li>
-                    <li><a href="#">集資案件</li>
-                    <li><a href="#">物資捐贈</li>
-                    <li><a href="#">捐款/捐物查詢</li>
-                  </ul>
-                </li>
-                <li><a href="#" class="nav">救援通報</a>
-                  <ul>
-                    <li><a href="#">救援申請</a></li>
-                    <li><a href="#">緊急物資申請</a></li>
-                    <li><a href="#">各級窗口通報</a></li>
-                  </ul>
-                </li>
-                <li><a href="#" class="nav">愛心志工</a>
-                  <ul>
-                    <li><a href="#">一般志工</a></li>
-                    <li><a href="#">中途保姆</a></li>
-                  </ul>
-                </li>
-                <li><a href="#" class="nav">愛兔援手</a>
-                  <ul>
-                    <li><a href="#">送養</a></li>
-                    <li><a href="#">捐血申請</a></li>
-                  </ul>
-                </li>
-                <li><a href="#" class="nav">愛兔講堂</a></li>
-                <li><a href="#" class="nav">寄宿/義賣</a>
-                  <ul>
-                    <li><a href="#">寄宿旅館</a></li>
-                    <li><a href="#">愛心義賣</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a class="navBtn">關於<span class="blackTri"></spn></a>
+                <ul class="navToggle">
+                  <li><a href="#">概述</a></li>
+                  <li><a href="#">Q&A</a></li>
+                  <li><a href="#">工作報告</a></li>
+                </ul>
+              </li>
+              <li><a href="adopt/adopt.html">認養</a></li>
+              <li><a class="navBtn">捐款/捐物<span class="blackTri"></a>
+                <ul class="navToggle">
+                  <li><a href="#">單次捐款</a></li>
+                  <li><a href="#">助養定期定額</a></li>
+                  <li><a href="#">集資案件</a></li>
+                  <li><a href="#">物資捐贈</a></li>
+                  <li><a href="#">捐款/捐物查詢</a></li>
+                </ul>
+              </li>
+              <li><a class="navBtn">救援通報<span class="blackTri"></a>
+                <ul class="navToggle">
+                  <li><a href="#">救援申請</a></li>
+                  <li><a href="#">緊急物資申請</a></li>
+                  <li><a href="#">各級窗口通報</a></li>
+                </ul>
+              </li>
+              <li><a class="navBtn">愛心志工<span class="blackTri"></a>
+                <ul class="navToggle">
+                  <li><a href="#">一般志工</a></li>
+                  <li><a href="#">中途保姆</a></li>
+                </ul>
+              </li>
+              <li><a class="navBtn">愛兔援手<span class="blackTri"></a>
+                <ul class="navToggle">
+                  <li><a href="#">送養</a></li>
+                  <li><a href="#">捐血申請</a></li>
+                </ul>
+              </li>
+              <li><a>愛兔講堂</a></li>
+              <li><a class="navBtn">寄宿/義賣<span class="blackTri"></a>
+                <ul class="navToggle">
+                  <li><a href="#">寄宿旅館</a></li>
+                  <li><a href="#">愛心義賣</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
       <p class="category"><a href="../index.html">首頁</a>>認養><a href="../adopt/adopt.html">兔兔類別總覽</a>>兔兔個案說明</p>
@@ -140,6 +147,7 @@
         </div>
       </div>
       <div class="footer">
+        <div class="footerBg"></div>
         <div class="leftFooter">
           <p>社團法人台灣愛兔協會(台內團字第1050413469號)<br>
               台北愛兔之家：(114)台北市內湖區內湖路一段73號3樓  0922-560-178<br>
@@ -147,19 +155,24 @@
               傳真：(02)2627-5418　信箱：service@rabbit.org.tw<br>
               勸募字號：衛部救字第1081368961
           </p>
+          <input type="button" value="聯絡我們" onclick="location.href='../adopt/adopt.html'">
           <div class="contactIcon">
             <a href=""><img src="../images/Landingpage/facebook.svg"></a>
             <a href=""><img src="../images/Landingpage/Line.svg"></a>
           </div>
         </div>
         <div class="rightFooter">
-          <a href="../index.html"><img src="../images/Landingpage/LOGO.png"></a>
+          <a href=""><img src="images/Landingpage/LOGO.png"></a>
           <div class="whiteBtn">
             <button>捐款/捐物</button>
             <input type="button" value="我要認養" onclick="location.href='../adopt/adopt.html'">
             <button>愛心志工</button>
             <button>救援通報</button>
           </div>
+          <p>捐款/捐物</p>
+          <p>認養</p>
+          <p>愛心志工</p>
+          <p>救援通報</p>
         </div>
       </div>
     </div>
