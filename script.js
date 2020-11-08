@@ -221,4 +221,9 @@ function handleGesure() {
     indicatorParentsAdd();
     refresh();
   };
+
+  if (touchendX == touchstartX) {
+    clearInterval(timer1);
+    refresh();
+  };
 };
