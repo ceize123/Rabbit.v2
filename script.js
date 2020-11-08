@@ -13,7 +13,7 @@ const indicatorParents2 = document.querySelector('.circleBlock');
 var circleIndex = 0;
 
 
-// slide
+// slide公佈欄
 function setIndex() {
   document.querySelector('.infoCircle .selected').classList.remove('selected');
   slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)';
@@ -89,7 +89,7 @@ $('.bulletinBlock').mouseout(function(){
 });
 
 
-// disapear
+// disapear兔兔切換
 function setIndex2() {
   document.querySelector('.circleBlock .circleSelected').classList.remove('circleSelected');
 }
@@ -190,3 +190,30 @@ $(document).ready(function(){
     $('.navBtn').children('span').removeClass('rotate');
   });
 });
+
+
+// swipe手勢
+
+var touchstartX = 0;
+var touchendX = 0;
+
+var gesuredZone = document.querySelector('.uppersection2');
+
+gesuredZone.addEventListener('touchstart', function(event) {
+    touchstartX = event.screenX;
+}, false);
+
+gesuredZone.addEventListener('touchend', function(event) {
+    touchendX = event.screenX;
+    handleGesure();
+}, false);
+
+function handleGesure() {
+    var swiped = 'swiped: ';
+    if (touchendX < touchstartX) {
+        alert(swiped + 'left!');
+    }
+    if (touchendX > touchstartX) {
+        alert(swiped + 'right!');
+    }
+}

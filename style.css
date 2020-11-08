@@ -213,7 +213,7 @@ nav ul ul li a:hover {
     background: rgba(255, 255, 255, 0.85);
     padding: 0;
     z-index: 3;
-    margin-top: -4px;
+    margin-top: -5px;
     clip-path: circle(50px at 90% -10%);
     -webkit-clip-path: circle(50px at 90% -10%);
     transition: all 0.5s ease-out;
@@ -518,78 +518,6 @@ nav ul ul li a:hover {
   right: 2%;
 }
 
-@media  screen and (max-width: 1200px) {
-  .ipadBulletin {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 87vw;
-    margin-left: 5.85vw;
-  }
-
-  .ipadBulletin p {
-    padding: 0;
-    margin: 0;
-    font-size: 36px;
-    margin-bottom: 4.65vh;
-  }
-
-  .uppersection2 {
-    width: 100%;
-    margin: 0;
-  }
-
-  .arrow {
-    display: none;
-  }
-
-  .webBulletin {
-    display: none;
-  }
-
-  .bulletin {
-  }
-
-  .buInfo {
-    display: none;
-  }
-
-  .bulletin img{
-    width: 92.2vw;
-    max-width: 1106px;
-  }
-
-  .buImg {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    text-align: left;
-  }
-
-  .buInfoIpad {
-    display: inline-block;
-    position: absolute;
-    letter-spacing: 0.08em;
-    color: #000;
-    width: 92.21vw;
-  }
-
-  .buInfoIpad p {
-    font-size: 36px;
-    background-color: rgba(255, 255, 255, 0.69);
-    border-radius: 30px;
-  }
-
-  .buInfoIpad span {
-    font-size: 24px;
-  }
-
-  .location {
-    margin-top: 8.7vh;
-  }
-
-}
-
 .infoCircle {
   display: flex;
   align-items: center;
@@ -628,6 +556,104 @@ nav ul ul li a:hover {
 .infoCircle ul li.selected{
   background-color: #C03178;
   border: 1px solid #C03178;
+}
+
+@media  screen and (max-width: 1200px) {
+  .BulletinIpad {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 87vw;
+    margin-left: 5.85vw;
+  }
+
+  .BulletinIpad p {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 4.65vh;
+  }
+
+  .BulletinIpad a{
+    font-size: 18px;
+    color: #3E3E3E;
+    text-decoration: underline;
+  }
+
+  .uppersection2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .webBulletin {
+    display: none;
+  }
+
+  .bulletin {
+  }
+
+  .buInfo {
+    display: none;
+  }
+
+  .bulletin img{
+    width: 92.2vw;
+    max-width: 1106px;
+    height: 100%;
+  }
+
+  .buImg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: left;
+  }
+
+  .buInfoIpad {
+    display: inline-block;
+    position: absolute;
+    letter-spacing: 0.08em;
+    color: #000;
+    width: 92.2vw;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.69);
+    border-radius: 30px;
+  }
+
+  .buInfoIpad p {
+    font-size: 36px;
+    position: absolute;
+    top: 5.5vh;
+    padding-left: 5.85%;
+  }
+
+  .buInfoIpad span {
+    font-size: 24px;
+    position: absolute;
+    bottom: 4.4vh;
+    padding-left: 5.85%;
+  }
+
+  .location {
+    margin: 0;
+  }
+
+  .infoCircle a {
+    display: none;
+  }
+
+  .infoCircle ul li {
+    width: 28.75px;
+    height: 28.75px;
+    border-radius: 28.75px;
+    margin-right: 32.86px;
+    /* 第三張會蓋到字 */
+  }
+
 }
 
 /* .navigation-manual {
