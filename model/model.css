@@ -8,6 +8,7 @@
   font-family:'Noto Sans TC', sans-serif !important;
   font-weight: normal;
   -webkit-tap-highlight-color:rgba(255,255,255,0);
+  color: #3E3E3E;
 }
 
 li {
@@ -58,6 +59,18 @@ body {
   background-color: #F2D1DA;
   width: 100%;
   max-width: 1600px;
+}
+
+@media screen and (min-width: 1600px) {
+  .menuBg {
+    margin-left: calc(1600px - 100vw);
+    width: calc(100vw + (100vw - 1600px));
+    height: 106px;
+    background-color: #F2D1DA;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
 }
 
 .logo {
@@ -340,13 +353,6 @@ nav ul ul li a:hover {
   padding-top: 106px;
 }
 
-@media screen and (max-width:1200px) {
-  .category {
-    padding-top: 118px;
-  }
-
-}
-
 .category a {
   color: #3E3E3E;
 }
@@ -373,7 +379,6 @@ nav ul ul li a:hover {
 .adoptInfo h2 {
   font-size: calc(34px + 4 * ((100vw - 1200px) / 500));
   margin: 4.7% 0 5.1% 17px;
-  font-weight: 400;
   letter-spacing: 0.08em;
 }
 
@@ -412,7 +417,7 @@ nav ul ul li a:hover {
 }
 
 .character p {
-  font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
+  font-size: calc(24px + 2 * ((100vw - 1440px) / 500));
   padding: 30px;
   letter-spacing: 0.08em;
   line-height: 170.19%;
@@ -447,6 +452,100 @@ nav ul ul li a:hover {
   transform: translateX(-58%);
 }
 
+.poaInputIpad {
+  display: none;
+}
+
+@media screen and (max-width:1200px) {
+  .category {
+    padding-top: 118px;
+    margin: 2.4vh 0 6.64vh 5.2%;
+  }
+
+  .rabImg {
+    padding-left: 3.25%;
+    flex:47.8;
+    position: relative;
+  }
+
+  .rabInfo img {
+    width: 100%;
+    max-width: 534.3px;
+    border-radius: 8.8%;
+  }
+
+  .adoptInfo {
+    flex: 52.2;
+    padding-left: 4.42%;
+  }
+
+  .adoptInfo h2 {
+    font-size: calc(24px + 3 * ((100vw - 768px) / 500));
+    margin: -1.75vh 0 2.9vh 0;
+  }
+
+  .infoUl ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .infoUl ul li {
+    font-size: calc(18px + 3 * ((100vw - 768px) / 500));
+  }
+
+  .infoUl ul li {
+    margin-bottom: 1.95vh;
+  }
+
+  .width45 {
+    width: 100%;
+  }
+
+  .infoUl li::before {
+    display: none;
+  }
+
+  .character {
+    width: 90.6%;
+    margin: 0;
+    background-color: #F2D1DA;
+  }
+
+  .character p {
+    font-size: calc(18px + 3 * ((100vw - 768px) / 500));
+    padding: 30px;
+    letter-spacing: 0.08em;
+    line-height: 170.19%;
+    margin: auto;
+  }
+
+  .infoUl {
+    position: static;
+  }
+
+  .purpleInput {
+    width: 20.2vw;
+    height: 7.9vw;
+    max-width: 242px;
+    max-height: 92.2px;
+    border-radius: 30px;
+    font-size: calc(24px + 5 * ((100vw - 768px) / 250));
+  }
+
+  .poaInput {
+    display: none;
+  }
+
+  .poaInputIpad {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 2.4vh;
+  }
+}
+
 /* section2 */
 
 .section2 {
@@ -464,6 +563,7 @@ nav ul ul li a:hover {
 
 .section2 p {
   margin: 0;
+  margin-bottom: 1.1vh;
   font-size: calc(22px + 4 * ((100vw - 1200px) / 500));
 }
 
@@ -485,6 +585,14 @@ nav ul ul li a:hover {
   justify-content: space-between;
   border-bottom: solid 1px black;
   cursor: pointer;
+}
+
+.drop {
+  transition: 0.5s;
+}
+
+.drop.rotate {
+  transform: rotate(-180deg);
 }
 
 .healthRecord ul {
@@ -527,20 +635,63 @@ nav ul ul li a:hover {
   overflow: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .section2 {
+    padding: 12.8vh 3.9% 0 3.9%;
+  }
+
+  .happen {
+    font-size: calc(18px + 3 * ((100vw - 768px) / 500));
+    padding: 24px 27px;
+    line-height: 179.71%;
+    margin-bottom: 10.55vh;
+  }
+
+  .section2 p {
+    font-size: calc(24px + 3 * ((100vw - 768px) / 500));
+  }
+
+  .section2 ul {
+    margin: 0;
+  }
+
+  .section2 ul li {
+    font-size: 18px;
+  }
+
+  .healthRecord p {
+    padding-bottom: 4px;
+    padding-top: 2vh;
+  }
+
+  .healthTitle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+    cursor: pointer;
+  }
+
+  .healthRecord li::before {
+    font-size: 13px;
+  }
+
+  .healthScroll {
+    height: 172px;
+  }
+}
+
+/* model */
+
 .model {
   margin-top: 5vh;
 }
 
-.modelBlock {
-  overflow: hidden;
+.model > p {
+  margin-bottom: 1.1vh;
 }
 
 .arrow {
   position: relative;
-  margin-top: 1.1vh;
-  max-width: 1456px;
-  display: flex;
-  justify-content: center;
 }
 
 .arrow1, .arrow2 {
@@ -551,11 +702,18 @@ nav ul ul li a:hover {
 }
 
 .arrow1 {
-  left: -30px;
+  left: -20px;
 }
 
 .arrow2 {
-  right: -30px;
+  right: -20px;
+}
+
+.modelBlock {
+  overflow: hidden;
+  width: 91vw;
+  max-width: 1456px;
+  margin: 0 1.5%;
 }
 
 .modelPic {
@@ -563,18 +721,16 @@ nav ul ul li a:hover {
   justify-content: center;
   width: 152%;
   transition: 0.5s;
-  overflow: hidden;
 }
 
 .imgBlock {
-  width: 45%;
   background-color: #F2D1DA;
   text-align: center;
   border-radius: 30px;
 }
 
 .imgBlock:not(:first-child) {
-  margin-left: 3.1%;
+  margin-left: 3.2%;
 }
 
 .modelPic p {
@@ -594,6 +750,54 @@ nav ul ul li a:hover {
   font-weight: 300;
   letter-spacing: 0.08em;
 }
+
+@media screen and (max-width: 1200px) {
+  .model {
+    margin-top: 12.79vh;
+  }
+
+  .modelBlock {
+    width: 86.2vw;
+    margin: 0;
+    max-width: 1035px;
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrow1, .arrow2 {
+    display: none;
+  }
+
+  .modelPic {
+    width: 300%;
+  }
+
+  .imgBlock {
+    width: 100%;
+  }
+
+  .imgBlock:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .modelPic p {
+    padding-bottom: 5.12vh;
+  }
+
+  .modelPic img {
+    width: 94.6%;
+    padding: 10.9vh 0 5.05vh 0;
+  }
+
+  .modelInput {
+    margin: 7.3vh 0;
+  }
+}
+
+
 
 /* footer */
 

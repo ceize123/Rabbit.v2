@@ -26,7 +26,7 @@ rightArrow.addEventListener('click', function() {
 $(document).ready(function() {
   let counter = 1;
   $(".healthTitle").click(function() {
-    $("li.start").nextUntil(".model").slideToggle();
+    $("li.start").nextUntil(".model").slideToggle("fast");
     if (counter == 1) {
       $("ul.toggleUl").addClass("healthScroll");
       counter++;
@@ -66,4 +66,39 @@ $(document).ready(function(){
     $('nav ul .navToggle').slideUp();
     $('.navBtn').children('span').removeClass('rotate');
   });
+  $('.healthTitle').click(function(){
+    $('.drop').toggleClass('rotate');
+  });
 });
+
+
+// swipe手勢
+
+var touchstartX = 0;
+var touchendX = 0;
+
+var gesuredZone = document.querySelector('.modelBlock');
+
+gesuredZone.addEventListener('touchstart', function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+    clearInterval(timer1);
+}, false);
+
+gesuredZone.addEventListener('touchend', function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    handleGesure();
+    // refresh();
+}, false);
+
+function handleGesure() {
+  if (touchendX > touchstartX) {
+    sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
+    setIndex();
+    // refresh();
+  };
+  if (touchendX < touchstartX) {
+    sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
+    setIndex();
+    // refresh();
+  };
+};
