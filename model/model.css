@@ -450,7 +450,7 @@ nav ul ul li a:hover {
 /* section2 */
 
 .section2 {
-  margin: 15vh 3.1% 0 3.1%;
+  padding: 15vh 3.1% 0 3.1%;
 }
 
 .happen {
@@ -532,16 +532,15 @@ nav ul ul li a:hover {
 }
 
 .modelBlock {
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
 }
 
 .arrow {
   position: relative;
   margin-top: 1.1vh;
-  width: 92vw;
   max-width: 1456px;
-  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
 }
 
 .arrow1, .arrow2 {
@@ -549,7 +548,6 @@ nav ul ul li a:hover {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  overflow: hidden;
 }
 
 .arrow1 {
