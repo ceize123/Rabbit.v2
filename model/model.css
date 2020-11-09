@@ -26,6 +26,7 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 html, body {
@@ -733,6 +734,10 @@ nav ul ul li a:hover {
 
   .rightFooter p:not(:first-child) {
     margin-top: 2.3vh;
+  }
+
+  .rightFooter a {
+    color: #3E3E3E;
   }
 }
 
