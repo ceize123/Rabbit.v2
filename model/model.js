@@ -1,7 +1,7 @@
 
 
 // 定義slide
-const slider = document.querySelector('.modelpic');
+const slider = document.querySelector('.modelPic');
 const leftArrow = document.querySelector('.arrow1');
 const rightArrow = document.querySelector('.arrow2');
 var sectionIndex = 0;

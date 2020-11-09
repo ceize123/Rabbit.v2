@@ -549,6 +549,7 @@ nav ul ul li a:hover {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  overflow: hidden;
 }
 
 .arrow1 {
@@ -559,7 +560,7 @@ nav ul ul li a:hover {
   right: -30px;
 }
 
-.modelpic {
+.modelPic {
   display: flex;
   justify-content: center;
   width: 152%;
@@ -578,11 +579,11 @@ nav ul ul li a:hover {
   margin-left: 3.1%;
 }
 
-.modelpic p {
+.modelPic p {
   padding-bottom: 4.88vh;
 }
 
-.modelpic img {
+.modelPic img {
   width: 94.6%;
   padding: 10.4vh 0 4.68vh 0;
 }
