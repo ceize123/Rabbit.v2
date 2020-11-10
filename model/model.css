@@ -672,13 +672,13 @@ nav ul ul li a:hover {
   .toggleUl::-webkit-scrollbar-thumb {
     background-color: #C03178;
     border-radius: 20px;
-  }
+  } */
 
   .healthScroll {
-    height: 0;
+    height: 200px;
   }
 
-  .hiddenList {
+  /* .hiddenList {
     display: block;
   } */
 }
