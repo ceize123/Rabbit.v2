@@ -656,7 +656,7 @@ nav ul ul li a:hover {
   }
 
   .healthRecord li::before {
-    font-size: 13px;
+    font-size: 25px;
   }
 
   .healthScroll {
@@ -809,10 +809,6 @@ nav ul ul li a:hover {
   }
 
 }
-
-
-
-
 
 /* footer */
 

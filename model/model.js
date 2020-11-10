@@ -107,7 +107,7 @@ var sectionIndexIpad = 0;
 
 function setIndexIpad() {
   document.querySelector('.infoCircle .selected').classList.remove('selected');
-  slider.style.transform = 'translate(' + (sectionIndexIpad) * -33.35 + '%)';
+  slider.style.transform = 'translate(' + (sectionIndexIpad) * -86.13 + 'vw)';
 }
 
 document.querySelectorAll('.infoCircle li').forEach(function(indicator, ind) {
