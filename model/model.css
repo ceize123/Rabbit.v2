@@ -525,10 +525,10 @@ nav ul ul li a:hover {
 
   .purpleInput {
     width: 20.2vw;
-    height: 7.9vw;
+    height: 7.7vw;
     max-width: 242px;
     max-height: 92.2px;
-    border-radius: 30px;
+    border-radius: 2.6vw;
     font-size: calc(24px + 5 * ((100vw - 768px) / 250));
   }
 
@@ -655,28 +655,12 @@ nav ul ul li a:hover {
     margin: 0;
   }
 
-  .section2 ul li {
-    font-size: 18px;
-  }
-
-  .healthRecord p {
-    padding-bottom: 4px;
-    padding-top: 2vh;
-  }
-
-  .healthTitle {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: solid 1px black;
-    cursor: pointer;
-  }
-
   .healthRecord li::before {
     font-size: 13px;
   }
 
   .healthScroll {
-    height: 200px;
+    height: 220px;
   }
 }
 
@@ -795,7 +779,38 @@ nav ul ul li a:hover {
   .modelInput {
     margin: 7.3vh 0;
   }
+
+  .infoCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.56vh;
+  }
+
+  .infoCircle ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .infoCircle ul li {
+    width: 30.54px;
+    height: 30.54px;
+    border-radius: 50%;
+    border: 1px solid #939393;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 17px;
+  }
+
+  .infoCircle ul li.selected{
+    background-color: #C03178;
+    border: 1px solid #C03178;
+  }
+
 }
+
+
 
 
 

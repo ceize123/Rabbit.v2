@@ -102,3 +102,19 @@ function handleGesure() {
     // refresh();
   };
 };
+
+var sectionIndexIpad = 0;
+
+function setIndexIpad() {
+  document.querySelector('.infoCircle .selected').classList.remove('selected');
+  slider.style.transform = 'translate(' + (sectionIndexIpad) * -33.35 + '%)';
+}
+
+document.querySelectorAll('.infoCircle li').forEach(function(indicator, ind) {
+  indicator.addEventListener('click', function(){
+    sectionIndexIpad = ind;
+    // 這邊setIndex一定要在add前面，不然剛add的'selected'也會被remove
+    setIndexIpad();
+    indicator.classList.add('selected');
+  });
+});
