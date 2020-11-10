@@ -105,13 +105,13 @@ gesuredZone.addEventListener('touchend', function(event) {
 
 function handleGesure() {
   if (touchendX - touchstartX > 5) {
-    sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
+    sectionIndexIpad = ( sectionIndexIpad > 0) ? sectionIndexIpad - 1 : 0;
     setIndexIpad();
     indicatorParentsAdd();
     // refresh();
   };
   if (touchstartX - touchendX > 5) {
-    sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
+    sectionIndexIpad = ( sectionIndexIpad < 2) ? sectionIndexIpad + 1 : 2;
     setIndexIpad();
     indicatorParentsAdd();
     // refresh();
