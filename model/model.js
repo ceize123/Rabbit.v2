@@ -26,7 +26,7 @@ rightArrow.addEventListener('click', function() {
 $(document).ready(function() {
   let counter = 1;
   $(".healthTitle").click(function() {
-    $("li.start").nextUntil(".model").slideToggle("fast");
+    $("li.start").nextUntil(".model").toggle();
     if (counter == 1) {
       $("ul.toggleUl").addClass("healthScroll");
       counter++;
@@ -91,12 +91,12 @@ gesuredZone.addEventListener('touchend', function(event) {
 }, false);
 
 function handleGesure() {
-  if (touchendX > touchstartX) {
+  if (touchendX - touchstartX > 5) {
     sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
     setIndex();
     // refresh();
   };
-  if (touchendX < touchstartX) {
+  if (touchstartX - touchendX > 5) {
     sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
     setIndex();
     // refresh();

@@ -211,13 +211,13 @@ gesuredZone.addEventListener('touchend', function(event) {
 }, false);
 
 function handleGesure() {
-  if (touchendX > touchstartX) {
+  if (touchendX - touchstartX > 5) {
     sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
     setIndex();
     indicatorParentsAdd();
     refresh();
   };
-  if (touchendX < touchstartX) {
+  if (touchstartX - touchendX > 5) {
     sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
     setIndex();
     indicatorParentsAdd();
