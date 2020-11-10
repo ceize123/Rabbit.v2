@@ -617,8 +617,11 @@ nav ul ul li a:hover {
   vertical-align: middle;
 }
 
-.hiddenList li {
+.hiddenList {
   display: none;
+}
+
+.hiddenList li {
   font-size: 18px;
 }
 
@@ -675,7 +678,7 @@ nav ul ul li a:hover {
   } */
 
   .healthScroll {
-    height: 200px;
+    height: 190px;
   }
 
   /* .hiddenList {
