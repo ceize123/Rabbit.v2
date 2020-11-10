@@ -912,7 +912,7 @@ nav ul ul li a:hover {
 
 @media screen and (max-width: 1200px) {
   .footer {
-    margin-top: 11.8vh;
+    margin: 0;
     height: auto;
     position: static;
     justify-content: space-between;
@@ -935,6 +935,8 @@ nav ul ul li a:hover {
     display: block;
     width: 34.9vw;
     height: 9.376vw;
+    max-width: 348px;
+    max-height: 93.75px;
     border-radius: 30px;
     font-size: 36px;
     background-color: #C03178;

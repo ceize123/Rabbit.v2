@@ -441,7 +441,7 @@ nav ul ul li a:hover {
   position: relative;
 }
 
-.ipadBulletin {
+.BulletinIpad {
   display: none;
 }
 
@@ -751,11 +751,11 @@ nav ul ul li a:hover {
 
 .circleBlock {
   display: flex;
-  flex: 17.08;
   flex-direction: column;
   align-items: center;
   margin-top: -25px;
-  margin-left: 7.2%;
+  margin-left: 5%;
+  margin-right: 3.66%;
 }
 
 .circle, .circle input {
@@ -784,7 +784,6 @@ nav ul ul li a:hover {
 
 .rabSlider {
   display: flex;
-  flex:82.92;
 }
 
 .notActive {
@@ -793,7 +792,6 @@ nav ul ul li a:hover {
 
 .rabImgs {
   text-align: center;
-  flex: 62.31;
 }
 
 .rabImgs img {
@@ -805,7 +803,8 @@ nav ul ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 37.69;
+  margin-right: 7%;
+  margin-left: 3.3%;
 }
 
 .adoptInput {
@@ -897,10 +896,16 @@ nav ul ul li a:hover {
 
   .circleBlock {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 83%;
-    margin-top: 0;
+    margin: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 4.2vh;
+  }
+
+  .circleBlock:not(:first-child) {
+    padding-left: 4vw;
   }
 
   .circle, .circle input  {
@@ -951,6 +956,10 @@ nav ul ul li a:hover {
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 6.9vh;
+  }
+
+  .rabInfo {
+    margin: 0;
   }
 
   .rabInfo > p {
@@ -1121,6 +1130,8 @@ nav ul ul li a:hover {
     display: block;
     width: 34.9vw;
     height: 9.376vw;
+    max-width: 348px;
+    max-height: 93.75px;
     border-radius: 30px;
     font-size: 36px;
     background-color: #C03178;
