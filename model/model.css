@@ -617,8 +617,9 @@ nav ul ul li a:hover {
   vertical-align: middle;
 }
 
-.hiddenList {
+.hiddenList li {
   display: none;
+  font-size: 18px;
 }
 
 .healthScroll::-webkit-scrollbar {
@@ -659,9 +660,27 @@ nav ul ul li a:hover {
     font-size: 13px;
   }
 
-  .healthScroll {
-    height: 220px;
+  /* .toggleUl {
+    height: 200px;
+    overflow: auto;
   }
+
+  .toggleUl::-webkit-scrollbar {
+    width: 22px;
+  }
+
+  .toggleUl::-webkit-scrollbar-thumb {
+    background-color: #C03178;
+    border-radius: 20px;
+  }
+
+  .healthScroll {
+    height: 0;
+  }
+
+  .hiddenList {
+    display: block;
+  } */
 }
 
 /* model */
@@ -806,10 +825,6 @@ nav ul ul li a:hover {
   .infoCircle ul li.selected{
     background-color: #C03178;
     border: 1px solid #C03178;
-  }
-
-  .hiddenList {
-    font-size: 18px;
   }
 
 }
