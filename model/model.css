@@ -656,7 +656,7 @@ nav ul ul li a:hover {
   }
 
   .healthRecord li::before {
-    font-size: 25px;
+    font-size: 13px;
   }
 
   .healthScroll {
@@ -806,6 +806,10 @@ nav ul ul li a:hover {
   .infoCircle ul li.selected{
     background-color: #C03178;
     border: 1px solid #C03178;
+  }
+
+  .hiddenList {
+    font-size: 18px;
   }
 
 }
