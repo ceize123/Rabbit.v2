@@ -11,10 +11,6 @@ function setIndex() {
   slider.style.transform = 'translate(' + (sectionIndex) * -34.35 + '%)';
 }
 
-function indicatorParentsAdd() {
-  indicatorParents.children[sectionIndex].classList.add('selected');
-}
-
 // slide--箭頭
 leftArrow.addEventListener('click', function() {
   sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
@@ -77,6 +73,18 @@ $(document).ready(function(){
 });
 
 
+
+var sectionIndexIpad = 0;
+
+function setIndexIpad() {
+  document.querySelector('.infoCircle .selected').classList.remove('selected');
+  slider.style.transform = 'translate(' + (sectionIndexIpad) * -86.13 + 'vw)';
+}
+
+function indicatorParentsAdd() {
+  indicatorParents.children[sectionIndexIpad].classList.add('selected');
+}
+
 // swipe手勢
 
 var touchstartX = 0;
@@ -98,24 +106,17 @@ gesuredZone.addEventListener('touchend', function(event) {
 function handleGesure() {
   if (touchendX - touchstartX > 5) {
     sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
-    setIndex();
+    setIndexIpad();
     indicatorParentsAdd();
     // refresh();
   };
   if (touchstartX - touchendX > 5) {
     sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
-    setIndex();
+    setIndexIpad();
     indicatorParentsAdd();
     // refresh();
   };
 };
-
-var sectionIndexIpad = 0;
-
-function setIndexIpad() {
-  document.querySelector('.infoCircle .selected').classList.remove('selected');
-  slider.style.transform = 'translate(' + (sectionIndexIpad) * -86.13 + 'vw)';
-}
 
 document.querySelectorAll('.infoCircle li').forEach(function(indicator, ind) {
   indicator.addEventListener('click', function(){
