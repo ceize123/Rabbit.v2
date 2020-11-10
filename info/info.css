@@ -486,6 +486,15 @@ nav ul ul li a:hover {
   display: none;
 }
 
+.hiddenQuestion {
+  display: none;
+  transition: 1s;
+}
+
+.hiddenQuestion.flex {
+  display: flex;
+}
+
 .purpleInput {
   border: solid #C03178;
   width: 16.45vw;
@@ -533,6 +542,28 @@ nav ul ul li a:hover {
 
   .answer p {
     font-size: 18px;
+  }
+
+  .questionLineIpad {
+    border-top: 1px solid #000;
+    margin: 3.8vh 3.47% 0 3.47%;
+    height: 3.3vh;
+  }
+
+  .tri {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 12px 0px 12px;
+    border-color: #3E3E3E transparent transparent transparent;
+    margin-top: 0.8vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+
+  .tri.rotate {
+    transform: rotate(-180deg);
   }
 
   .purpleInput {
@@ -663,6 +694,7 @@ nav ul ul li a:hover {
     color: #fff;
     letter-spacing: 0.2em;
     margin-bottom: 3.9vh;
+    border: none;
   }
 
   .contactIcon {

@@ -32,4 +32,8 @@ $(document).ready(function(){
     $('nav ul .navToggle').slideUp();
     $('.navBtn').children('span').removeClass('rotate');
   });
+  $('.questionLineIpad').click(function(){
+    $('.hiddenQuestion').toggleClass('flex');
+    $(this).children('div').toggleClass('rotate');
+  });
 });

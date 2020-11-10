@@ -942,6 +942,7 @@ nav ul ul li a:hover {
     color: #fff;
     letter-spacing: 0.2em;
     margin-bottom: 3.9vh;
+    border: none;
   }
 
   .contactIcon {

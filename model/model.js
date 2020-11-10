@@ -27,7 +27,7 @@ rightArrow.addEventListener('click', function() {
 $(document).ready(function() {
   let counter = 1;
   $(".healthTitle").click(function() {
-    $("li.start").nextUntil(".model").toggle();
+    $("li.start").nextUntil(".model").slideToggle();
     if (counter == 1) {
       $("ul.toggleUl").addClass("healthScroll");
       counter++;
