@@ -4,10 +4,15 @@
 const slider = document.querySelector('.modelPic');
 const leftArrow = document.querySelector('.arrow1');
 const rightArrow = document.querySelector('.arrow2');
+const indicatorParents = document.querySelector('.infoCircle ul');
 var sectionIndex = 0;
 
 function setIndex() {
   slider.style.transform = 'translate(' + (sectionIndex) * -34.35 + '%)';
+}
+
+function indicatorParentsAdd() {
+  indicatorParents.children[sectionIndex].classList.add('selected');
 }
 
 // slide--箭頭
@@ -94,11 +99,13 @@ function handleGesure() {
   if (touchendX - touchstartX > 5) {
     sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
     setIndex();
+    indicatorParentsAdd();
     // refresh();
   };
   if (touchstartX - touchendX > 5) {
     sectionIndex = ( sectionIndex < 2) ? sectionIndex + 1 : 2;
     setIndex();
+    indicatorParentsAdd();
     // refresh();
   };
 };
