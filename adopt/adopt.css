@@ -354,12 +354,6 @@ nav ul ul li a:hover {
   padding-top: 106px;
 }
 
-@media screen and (max-width: 1200px) {
-  .section1 {
-    padding-top: 118px;
-  }
-}
-
 .section1Left {
   width: 274px;
   padding-left: 35px;
@@ -449,31 +443,38 @@ input[type="checkbox"]:checked:after {
   background-color: #fff;
 }
 
-.section1Right p {
-  font-size: 14px;
+.category {
   margin: 0;
-  letter-spacing: 0.075em;]
-}
-
-.category p {
   letter-spacing: 0.05em;
+  padding: 3vh 0 1.3vh 45px;
+  letter-spacing: 0.075em;
+  font-size: 14px;
 }
 
 .category a {
   color: #3E3E3E;
 }
 
-.section1Right > p {
-  padding: 3vh 0 1.3vh 45px;
+.block {
+  display: flex;
 }
 
-.block1 {
-  display: flex;
+.block:not(:last-child) {
   margin-bottom: 4.4vh;
 }
 
-.block2 {
+.block:last-child {
+  margin-bottom: 8.8vh;
+}
+
+.blockIpad {
+  display: none;
+}
+
+.picBlock {
   display: flex;
+  flex-direction: column;
+  padding: 0 6%;
 }
 
 .rabPic {
@@ -481,21 +482,211 @@ input[type="checkbox"]:checked:after {
   text-align: center;
 }
 
+.rabPic p {
+  font-size: 14px;
+  margin: 0;
+  letter-spacing: 0.075em;
+  line-height: 30px;
+}
+
+.rabPic:not(:last-child) {
+  margin-right: 5%;
+}
+
 .rabPic img {
-  width: 79%;
+  width: 100%;
 }
 
-.leftPic {
-  padding-left: 38px;
+.findRab {
+  display: none;
 }
 
-.midPic {
-  text-align: center;
+.findRabSectionIpad {
+  display: none;
 }
 
-.rightPic {
-  padding-right: 38px;
+.learnMore {
+  display: none;
 }
+
+@media screen and (max-width: 1200px) {
+  .section1 {
+    padding-top: 118px;
+  }
+
+  .section1Left {
+    display: none;
+  }
+
+  .section1Right {
+    width: 100vw;
+    position: relative;
+  }
+
+  .category {
+    padding: 2.9vh 0 2.64vh 3.1%;
+  }
+
+
+  .block:first-child {
+    margin-bottom: 4.4vh;
+  }
+
+  .rabPic {
+    margin: 0;
+  }
+
+  .rabPic p {
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 2.05vh;
+  }
+
+  .rabPic img {
+    border-radius: 3.9vw;
+  }
+
+  .picBlock {
+    padding: 0 5.2%;
+  }
+
+  .block {
+    display: none;
+  }
+
+  .blockIpad {
+    display: flex;
+  }
+
+  .findRabBtn {
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 20.2vw;
+    height: 7.7vw;
+    max-width: 242px;
+    max-height: 92px;
+    border-radius: 2.6vw;
+    font-size: 18px;
+    background-color: #C03178;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 4.5vh;
+    border: none;
+  }
+
+  .learnMore {
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 15.4vw;
+    height: 5.28vw;
+    max-width: 154px;
+    max-height: 52.8px;
+    border-radius: 2.6vw;
+    font-size: 18px;
+    background-color: #C03178;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 0.075em;
+    margin-top: 2.63vh;
+    margin-bottom: 4.6875vh;
+    border: none;
+  }
+
+/* slide */
+  .findRabSectionIpad {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 118px);
+    width: 100vw;
+    padding: 0;
+    z-index: 1;
+    transition: all 0.2s ease-out;
+    display: flex;
+    margin-left: -100vw;
+  }
+
+  .findRabSectionIpad p {
+    margin: 0;
+    font-size: 36px;
+    margin-top: 4.4vh;
+    margin-bottom: 6.82vh;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .findRabLeft {
+    width: 76.2%;
+    position: relative;
+    background-color: #F2D1DA;
+    transition: 0.5s;
+  }
+
+  .choseSection {
+    height: calc(100vh - 270px);
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+  }
+
+  .choseList {
+    border-bottom: 1px solid #C4C4C4;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2.15vh;
+    margin-bottom: 1.4vh;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .arrow_plus {
+    position: absolute;
+    right: 7.16%;
+    top: -0.2vh;
+  }
+
+  .lessIcon {
+    position: absolute;
+    left: 0;
+    padding-left: 6.5vw;
+    cursor: pointer;
+  }
+
+  .choseInside {
+    position: absolute;
+    top: 0;
+    left: -76.2vw;
+    transition: 0.5s;
+  }
+
+
+  .cleanSection {
+  }
+
+  .findRabRight {
+    background-color: rgba(62, 62, 62, 0.5);
+    width: 23.8%;
+    position: relative;
+  }
+
+  .findRabRight p {
+    position: absolute;
+    padding: 2vh;
+    top: 2.4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+
+}
+
 
 /* footer */
 

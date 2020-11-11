@@ -26,3 +26,26 @@ $(document).ready(function(){
     $('.navBtn').children('span').removeClass('rotate');
   });
 });
+
+// findRab
+  $('.findRabBtn').click(function(){
+    $('.findRabSectionIpad').css('margin-left',0)
+  });
+  //
+  // $('.choseOutside > .choseList').click(function(){
+  //   $('.choseInside').css('left',0);
+  // });
+  $(".choseOutside > .choseList").each(function(index){
+    $(this).click(function(){
+      $("#Inside"+index+"").css('left',0);
+    });
+  });
+
+  $('.lessIcon').click(function(){
+    $('.choseInside').css('left','-76.2vw');
+  });
+
+  $('.findRabRight').click(function(){
+    $('.findRabSectionIpad').css('margin-left','-100vw');
+    $('.choseInside').css('left','-76.2vw');
+  });
