@@ -62,18 +62,6 @@ body {
   max-width: 1600px;
 }
 
-@media screen and (min-width: 1600px) {
-  .menuBg {
-    margin-left: calc(1600px - 100vw);
-    width: calc(100vw + (100vw - 1600px));
-    height: 106px;
-    background-color: #F2D1DA;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-}
-
 .logo {
   padding-left: 2.77%;
   padding-top: 15px;
@@ -509,6 +497,10 @@ input[type="checkbox"]:checked:after {
   display: none;
 }
 
+.findRabBtn {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .section1 {
     padding-top: 118px;
@@ -650,6 +642,7 @@ input[type="checkbox"]:checked:after {
     position: absolute;
     right: 7.16%;
     top: -0.2vh;
+    pointer-events: none;
   }
 
   .lessIcon {
@@ -666,8 +659,42 @@ input[type="checkbox"]:checked:after {
     transition: 0.5s;
   }
 
+  .choseList p {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .choosenSection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .choosenItem {
+    height: 3.125vw;
+    border-radius: 2.6vw;
+    background-color: #C03178;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 35px;
+    padding-right: 29px;
+    line-height: 3.125vw;
+    margin-top: 1.8vh;
+    margin-right: 2.7vw;
+    cursor: pointer;
+  }
 
   .cleanSection {
+    padding-left: 3.9vw;
+  }
+
+  .cleanAll p {
+    font-size: 18px;
+    padding: 0;
+    margin-top: 1.8vh;
+    border-bottom: 1px solid #000;
+    letter-spacing: 0.075em;
+    opacity: 0;
+    cursor: pointer;
   }
 
   .findRabRight {
@@ -695,18 +722,6 @@ input[type="checkbox"]:checked:after {
   background-color: #F2D1DA;
   position: relative;
   height: 289px;
-}
-
-@media screen and (min-width: 1600px) {
-  .footerBg {
-    margin-left: calc(1600px - 100vw);
-    width: calc(100vw + (100vw - 1600px));
-    height: 289px;
-    background-color: #F2D1DA;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
 }
 
 .leftFooter {

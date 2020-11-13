@@ -62,18 +62,6 @@ body {
   max-width: 1600px;
 }
 
-@media screen and (min-width: 1600px) {
-  .menuBg {
-    margin-left: calc(1600px - 100vw);
-    width: calc(100vw + (100vw - 1600px));
-    height: 106px;
-    background-color: #F2D1DA;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-}
-
 .logo {
   padding-left: 2.77%;
   padding-top: 15px;
@@ -593,18 +581,6 @@ nav ul ul li a:hover {
   margin-top: 4.57vh;
   position: relative;
   height: 289px;
-}
-
-@media screen and (min-width: 1600px) {
-  .footerBg {
-    margin-left: calc(1600px - 100vw);
-    width: calc(100vw + (100vw - 1600px));
-    height: 289px;
-    background-color: #F2D1DA;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
 }
 
 .leftFooter {
