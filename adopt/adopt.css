@@ -604,7 +604,6 @@ input[type="checkbox"]:checked:after {
     transition: all 0.2s ease-out;
     display: flex;
     margin-left: -100vw;
-    pointer-events: none;
   }
 
   .findRabSectionIpad p {

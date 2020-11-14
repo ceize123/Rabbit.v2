@@ -33,7 +33,8 @@ $(document).ready(function(){
   let count = 0;
 
   $('.findRabBtn').click(function(){
-    $('.findRabSectionIpad').css('margin-left',0)
+    $('.findRabSectionIpad').css('margin-left',0);
+    $("body").css("overflow", "hidden");
   });
 
   // $('.choseOutside > .choseList').click(function(){
@@ -52,6 +53,7 @@ $(document).ready(function(){
   $('.findRabRight').click(function(){
     $('.findRabSectionIpad').css('margin-left','-100vw');
     $('.choseInside').css('left','-76.2vw');
+    $("body").css("overflow", "auto");
   });
 
   // cleanSection
