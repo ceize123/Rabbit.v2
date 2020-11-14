@@ -11,6 +11,11 @@
   color: #3E3E3E;
 }
 
+@viewport {
+    width: device-width;
+    initial-scale: 1;
+}
+
 nav li {
   list-style: none;
 }
@@ -681,6 +686,15 @@ input[type="checkbox"]:checked:after {
     margin-top: 1.8vh;
     margin-right: 2.7vw;
     cursor: pointer;
+    position: relative;
+  }
+
+  .choosenItem img {
+    width: 10px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .cleanSection {
@@ -703,10 +717,10 @@ input[type="checkbox"]:checked:after {
     position: relative;
   }
 
-  .findRabRight p {
+  .findRabRight img {
     position: absolute;
     padding: 2vh;
-    top: 2.4vh;
+    top: 4.4vh;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;

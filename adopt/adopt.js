@@ -69,8 +69,9 @@ $(document).ready(function(){
     // 檢查set裡面有沒有這個value，沒有的話才新增
     if ( checkValue.has($(this).attr('value')) == false ) {
     // 在cleanAll外部新增，所以用before
-      $('.cleanAll').before('<div class="choosenItem">' + $(this).attr('value') + '</div>');
+      $('.cleanAll').before('<div class="choosenItem"><img src="../images/兔兔類別總覽/x.svg" />' + $(this).attr('value') + '</div>');
       checkValue.add($(this).attr('value'));
+      console.log($(this).attr('value'));
       $('.cleanAll p').css('opacity', 1);
       count++;
     };
@@ -78,6 +79,7 @@ $(document).ready(function(){
 
   // 個別清除 delegate
   $('.choosenSection').delegate('.choosenItem','click',function(){
+    console.log($(this).text());
     $(this).remove();
     checkValue.delete($(this).text());
     count--;
