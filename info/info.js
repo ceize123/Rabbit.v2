@@ -3,6 +3,11 @@ $(document).ready(function() {
     $(this).next(".answer").slideToggle();
     $(this).children(".drop").toggleClass('rotate');
   });
+  $('.questionLineIpad').click(function(){
+    $('.hiddenQuestion').toggleClass('flex');
+    $(this).children('div').toggleClass('rotate');
+    $('.hiddenAnswer').css('display', 'none');
+  });
 });
 
 // Ipad
@@ -31,9 +36,5 @@ $(document).ready(function(){
   $('.hamburger').click(function(){
     $('nav ul .navToggle').slideUp();
     $('.navBtn').children('span').removeClass('rotate');
-  });
-  $('.questionLineIpad').click(function(){
-    $('.hiddenQuestion').toggleClass('flex');
-    $(this).children('div').toggleClass('rotate');
   });
 });

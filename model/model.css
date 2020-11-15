@@ -816,7 +816,7 @@ nav ul ul li a:hover {
   }
 
   .healthScroll {
-    height: 300px;
+    height: 320px;
   }
 }
 
@@ -956,6 +956,9 @@ nav ul ul li a:hover {
     border: 1px solid #939393;
     cursor: pointer;
     transition: 0.5s;
+  }
+
+  .infoCircle ul li:not(:last-child) {
     margin-right: 17px;
   }
 

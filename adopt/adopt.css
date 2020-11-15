@@ -777,7 +777,7 @@ input[type="checkbox"]:checked:after {
     max-width: 317px;
     max-height: 120px;
     border-radius: 5.3vw;
-    font-size: calc(24px + 6 * ((100vw - 375px) / 200));
+    font-size: calc(18px + 4 * ((100vw - 375px) / 200));
     margin-bottom: 6vh;
   }
 
