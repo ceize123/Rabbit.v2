@@ -749,7 +749,8 @@ nav ul ul li a:hover {
 
 .healthScroll {
   height: 310px;
-  overflow-y: auto;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1200px) {
@@ -821,7 +822,7 @@ nav ul ul li a:hover {
   }
 
   .healthScroll {
-    height: 350px;
+    height: 65vh;
   }
 }
 
