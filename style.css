@@ -1115,9 +1115,9 @@ nav ul ul li a:hover {
 
 @media screen and (max-width: 768px) {
   .circle, .circle input  {
-    font-size: 18px;
+    font-size: 16px;
     min-width: 64px;
-    mid-height: 64px;
+    min-height: 64px;
   }
 
   .circleBlock:not(:first-child) {
@@ -1127,7 +1127,6 @@ nav ul ul li a:hover {
   .circleBlock .circleSelected{
     transform:scale(1.4375);
     font-size: 16.7px;
-    letter-spacing: 0;
   }
 
   .adoptInputIpad {
