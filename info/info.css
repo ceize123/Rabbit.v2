@@ -132,7 +132,7 @@ nav ul ul li a:hover {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     width: 100%;
   }
@@ -581,7 +581,7 @@ nav ul ul li a:hover {
   transform: rotate(-180deg);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .secondBar {
     margin-top: 5.86vh;
   }
@@ -730,7 +730,7 @@ nav ul ul li a:hover {
   margin: 26px 5.5px 0 5.5px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
     margin-top: 0;
     height: auto;
