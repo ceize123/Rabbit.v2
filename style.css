@@ -726,8 +726,8 @@ nav ul ul li a:hover {
   }
 
   .buInfoIpad p {
-    font-size: 36px;
-    top: 3vh;
+    font-size: 32px;
+    top: 2vh;
     padding-left: 5.85%;
   }
 
@@ -1126,7 +1126,7 @@ nav ul ul li a:hover {
 
   .circleBlock .circleSelected{
     transform:scale(1.4375);
-    font-size: 16.7px;
+    font-size: 16px;
   }
 
   .adoptInputIpad {
