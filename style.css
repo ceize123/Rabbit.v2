@@ -704,6 +704,7 @@ nav ul ul li a:hover {
   .infoCircle ul li {
     width: 28.75px;
     height: 28.75px;
+    margin: 0;
     border-radius: 28.75px;
     /* 第三張會蓋到字 */
   }
@@ -740,6 +741,7 @@ nav ul ul li a:hover {
   .infoCircle ul li {
     width: 14px;
     height: 14px;
+    border-radius: 14px;
   }
 
   .infoCircle ul li:not(:last-child) {
