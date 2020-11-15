@@ -776,6 +776,11 @@ nav ul ul li a:hover {
     font-size: 13px;
   }
 
+  .healthRecord span {
+    position: relative;
+    left: calc(27px + 1%);
+  }
+
   .healthScroll {
     height: 200px;
   }

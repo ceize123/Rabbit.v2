@@ -23,7 +23,6 @@ rightArrow.addEventListener('click', function() {
 });
 
 
-
 $(document).ready(function() {
   let counter = 1;
   $(".healthTitle").click(function() {
@@ -72,7 +71,11 @@ $(document).ready(function(){
   });
 });
 
-
+// 換行
+var br = document.createElement("br");;
+if (jQuery(window).width() < 1200) {
+  $('.healthRecord span').prepend(br);
+};
 
 var sectionIndexIpad = 0;
 

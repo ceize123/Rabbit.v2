@@ -38,3 +38,9 @@ $(document).ready(function(){
     $('.navBtn').children('span').removeClass('rotate');
   });
 });
+
+
+//換行
+if (jQuery(window).width() < 1200) {
+  $('.freQues span').prepend('<br>');
+};
