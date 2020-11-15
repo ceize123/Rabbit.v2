@@ -418,7 +418,7 @@ nav ul ul li a:hover {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nose img {
     left: 50%;
     transform: translateX(-50%);
@@ -705,12 +705,16 @@ nav ul ul li a:hover {
     width: 28.75px;
     height: 28.75px;
     border-radius: 28.75px;
-    margin-right: 32.86px;
     /* 第三張會蓋到字 */
   }
+
+  .infoCircle ul li:not(:last-child) {
+    margin-right: 32.86px;
+  }
+
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .BulletinIpad p {
     font-size: 24px;
     margin-bottom: 2.55vh;
@@ -731,6 +735,15 @@ nav ul ul li a:hover {
     position: absolute;
     bottom: 2vh;
     padding-left: 5.85%;
+  }
+
+  .infoCircle ul li {
+    width: 14px;
+    height: 14px;
+  }
+
+  .infoCircle ul li:not(:last-child) {
+    margin-right: 16px;
   }
 }
 
@@ -966,7 +979,7 @@ nav ul ul li a:hover {
   .circleBlock {
     flex-direction: row;
     justify-content: space-around;
-    width: 83%;
+    width: 90vw;
     margin: 0;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -980,6 +993,8 @@ nav ul ul li a:hover {
   .circle, .circle input  {
     width: 16vw;
     height: 16vw;
+    min-width: 128px;
+    mid-height: 128px;
     font-size: 36px;
     background-color: #F2D1DA;
     color: #3E3E3E;
@@ -1096,13 +1111,11 @@ nav ul ul li a:hover {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .circleBlock{
-    width: 84vw;
-  }
-
+@media screen and (max-width: 768px) {
   .circle, .circle input  {
     font-size: 18px;
+    min-width: 64px;
+    mid-height: 64px;
   }
 
   .circleBlock:not(:first-child) {
@@ -1275,7 +1288,7 @@ nav ul ul li a:hover {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer {
     margin-top: 7.48vh;
     padding: 3vh 0;
