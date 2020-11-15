@@ -334,6 +334,50 @@ nav ul ul li a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  nav > ul > li:not(:first-child) {
+    margin-top: 2.69vh;
+  }
+
+  nav > ul > li:first-child {
+    margin-top: 8.53vh;
+  }
+
+  nav ul li a {
+    font-size: 24px;
+  }
+
+  .blackTri {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 17px 10px 0px 10px;
+    border-color: #3E3E3E transparent transparent transparent;
+    position: absolute;
+    top: 12px;
+    margin-left: 10px;
+    transition: 0.5s;
+  }
+
+  .hamburger {
+    padding-right: 12vw;
+  }
+
+  .line:not(:first-child) {
+    margin-top: 1vh;
+  }
+
+  nav ul ul {
+    padding: 20px 0;
+    width: 168px;
+    border-radius: 30px;
+  }
+
+  nav ul ul li a{
+    font-size: 18px;
+  }
+}
+
 
 /* mustKnow */
 
@@ -438,6 +482,26 @@ nav ul ul li a:hover {
 
   .infoBlock ol li {
     margin-top: 21px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category {
+    margin: 3.14vh 0 4.19vh 0;
+    text-align: center;
+    font-size: calc(14px + 3 * ((100vw - 375px) / 300));
+  }
+
+  .titleBar {
+    font-size: calc(24px + 4 * ((100vw - 375px) / 500));
+  }
+
+  .infoBlock p {
+    font-size: 18px;
+  }
+
+  .infoBlock li {
+    font-size: 18px;
   }
 }
 
@@ -564,6 +628,7 @@ nav ul ul li a:hover {
     max-height: 92px;
     border-radius: 2.6vw;
     font-size: calc(24px + 5 * ((100vw - 768px) / 250));
+    box-shadow: none;
   }
 
   .InfoInput {
@@ -572,7 +637,31 @@ nav ul ul li a:hover {
     margin-top: 5.96vh;
     margin-bottom: 7.23vh;
   }
+}
 
+@media screen and (max-width: 768px) {
+  .question p {
+    margin: 3vh 0 3px 3%;
+    font-size: 18px
+  }
+
+  .question:nth-child(1) {
+    margin-top: 3.74vh;
+  }
+
+  .purpleInput {
+    width: 41.3vw;
+    height: 15.73vw;
+    max-width: 317px;
+    max-height: 120px;
+    border-radius: 5.3vw;
+    font-size: calc(24px + 6 * ((100vw - 375px) / 200));
+  }
+
+  .InfoInput {
+    margin-top: 7.6vh;
+    margin-bottom: 10.48vh;
+  }
 }
 
 
@@ -709,6 +798,36 @@ nav ul ul li a:hover {
 
   .rightFooter a {
     color: #3E3E3E;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 7.48vh;
+    padding: 3vh 0;
+  }
+
+  .leftFooter {
+    align-items: center;
+    margin-top: 2vh;
+  }
+
+  .leftFooter input {
+    width: 34.9vw;
+    height: 10.93vw;
+    max-width: 288.7px;
+    max-height: 84px;
+    border-radius: 8vw;
+    font-size: calc( 20px + 5 * ((100vw - 375px) / 200));
+    margin-bottom: 3.5vh;
+  }
+
+  .rightFooter p {
+    font-size: calc( 14px + 5 * ((100vw - 375px) / 200));
+  }
+
+  .rightFooter p:not(:first-child) {
+    margin-top: 2vh;
   }
 }
 

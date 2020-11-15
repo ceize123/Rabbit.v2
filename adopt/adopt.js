@@ -31,9 +31,9 @@ $(document).ready(function(){
 
 // findRab
   let count = 0;
-
   $('.findRabBtn').click(function(){
     $('.findRabSectionIpad').css('margin-left',0);
+    // 讓背景固定，不能滑動
     $("body").css("overflow", "hidden");
   });
 
@@ -89,7 +89,6 @@ $(document).ready(function(){
       $('.cleanAll p').css('opacity', 0);
     };
   });
-
 
 
   // 清空

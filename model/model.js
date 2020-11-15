@@ -78,7 +78,7 @@ var sectionIndexIpad = 0;
 
 function setIndexIpad() {
   document.querySelector('.infoCircle .selected').classList.remove('selected');
-  slider.style.transform = 'translate(' + (sectionIndexIpad) * -86.13 + 'vw)';
+  slider.style.transform = 'translate(' + (sectionIndexIpad) * -86.2 + 'vw)';
 }
 
 function indicatorParentsAdd() {
@@ -126,3 +126,17 @@ document.querySelectorAll('.infoCircle li').forEach(function(indicator, ind) {
     indicator.classList.add('selected');
   });
 });
+
+// 手機
+// 調整順序
+if (jQuery(window).width() < 768) {
+  $('.model').prependTo('.rabImg');
+  $('.adoptInfo h2').prependTo('.imgBlock');
+  $('.modelInput').appendTo('.healthRecord');
+
+
+  function setIndexIpad() {
+    document.querySelector('.infoCircle .selected').classList.remove('selected');
+    slider.style.transform = 'translate(' + (sectionIndexIpad) * -100 + 'vw)';
+  }
+};

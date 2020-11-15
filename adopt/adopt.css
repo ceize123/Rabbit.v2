@@ -339,6 +339,50 @@ nav ul ul li a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  nav > ul > li:not(:first-child) {
+    margin-top: 2.69vh;
+  }
+
+  nav > ul > li:first-child {
+    margin-top: 8.53vh;
+  }
+
+  nav ul li a {
+    font-size: 24px;
+  }
+
+  .blackTri {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 17px 10px 0px 10px;
+    border-color: #3E3E3E transparent transparent transparent;
+    position: absolute;
+    top: 12px;
+    margin-left: 10px;
+    transition: 0.5s;
+  }
+
+  .hamburger {
+    padding-right: 12vw;
+  }
+
+  .line:not(:first-child) {
+    margin-top: 1vh;
+  }
+
+  nav ul ul {
+    padding: 20px 0;
+    width: 168px;
+    border-radius: 30px;
+  }
+
+  nav ul ul li a{
+    font-size: 18px;
+  }
+}
+
 
 /* section1 */
 
@@ -524,11 +568,6 @@ input[type="checkbox"]:checked:after {
     padding: 2.9vh 0 2.64vh 3.1%;
   }
 
-
-  .block:first-child {
-    margin-bottom: 4.4vh;
-  }
-
   .rabPic {
     margin: 0;
   }
@@ -541,10 +580,6 @@ input[type="checkbox"]:checked:after {
 
   .rabPic img {
     border-radius: 3.9vw;
-  }
-
-  .picBlock {
-    padding: 0 5.2%;
   }
 
   .block {
@@ -684,7 +719,7 @@ input[type="checkbox"]:checked:after {
     padding-left: 35px;
     padding-right: 29px;
     line-height: 3.125vw;
-    margin-top: 1.8vh;
+    margin-top: 20px;
     margin-right: 2.7vw;
     cursor: pointer;
     position: relative;
@@ -705,7 +740,7 @@ input[type="checkbox"]:checked:after {
   .cleanAll p {
     font-size: 18px;
     padding: 0;
-    margin-top: 1.8vh;
+    margin-top: 20px;
     border-bottom: 1px solid #000;
     letter-spacing: 0.075em;
     opacity: 0;
@@ -726,9 +761,91 @@ input[type="checkbox"]:checked:after {
     transform: translateX(-50%);
     cursor: pointer;
   }
-
 }
 
+@media screen and (max-width: 768px) {
+  .category {
+    margin: 3.14vh 0 3.59vh 0;
+    padding: 0;
+    text-align: center;
+    font-size: calc(14px + 3 * ((100vw - 375px) / 300));
+  }
+
+  .findRabBtn {
+    width: 41.3vw;
+    height: 15.73vw;
+    max-width: 317px;
+    max-height: 120px;
+    border-radius: 5.3vw;
+    font-size: calc(24px + 6 * ((100vw - 375px) / 200));
+    margin-bottom: 6vh;
+  }
+
+  .blockIpad {
+    display: block;
+  }
+
+  .rabPic:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .rabPic p {
+    font-size: calc(18px + 5 * ((100vw - 375px) / 250));
+    line-height: calc(4vh + 15px);
+    padding-top: 3vh;
+  }
+
+  .rabPic img {
+    border-radius: 3.9vw;
+  }
+
+  .learnMore {
+    width: 29.6vw;
+    height: 10.13vw;
+    max-width: 227px;
+    max-height: 77.8px;
+    border-radius: 5.3vw;
+    font-size: calc(18px + 5 * ((100vw - 375px) / 250));
+    margin-top: 2.7vh;
+    margin-bottom: 6vh;
+  }
+
+/* slide */
+  .findRabSectionIpad p {
+    font-size: 18px;
+    margin-top: 4.5vh;
+    margin-bottom: 4.4vh;
+  }
+
+  .choseSection {
+    font-size: 18px;
+    height: calc(100vh - 220px);
+  }
+
+  .choseList {
+    padding-bottom: 1.4vh;
+    margin-bottom: 1.4vh;
+  }
+
+  .choseList p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .cleanAll p {
+    font-size: 10px;
+    margin-top: 22px;
+  }
+
+
+  .findRabRight img {
+    position: absolute;
+    padding: 2vh;
+    top: 3.74vh;
+    width: 13px;
+    height: 25px;
+  }
+}
 
 /* footer */
 
@@ -861,6 +978,36 @@ input[type="checkbox"]:checked:after {
 
   .rightFooter a {
     color: #3E3E3E;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 7.48vh;
+    padding: 3vh 0;
+  }
+
+  .leftFooter {
+    align-items: center;
+    margin-top: 2vh;
+  }
+
+  .leftFooter input {
+    width: 34.9vw;
+    height: 10.93vw;
+    max-width: 288.7px;
+    max-height: 84px;
+    border-radius: 8vw;
+    font-size: calc( 20px + 5 * ((100vw - 375px) / 200));
+    margin-bottom: 3.5vh;
+  }
+
+  .rightFooter p {
+    font-size: calc( 14px + 5 * ((100vw - 375px) / 200));
+  }
+
+  .rightFooter p:not(:first-child) {
+    margin-top: 2vh;
   }
 }
 

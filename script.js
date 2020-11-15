@@ -123,7 +123,7 @@ document.querySelectorAll('.circleBlock button').forEach(function(indicator2, in
 
 
 // 自動切換2
-if (jQuery(window).width() > 1200) {
+// if (jQuery(window).width() > 1200) {
   timer2 = setInterval(function(){
     if(circleIndex < 2) {
       circleIndex++;
@@ -157,7 +157,7 @@ if (jQuery(window).width() > 1200) {
         indicatorParentsAdd2();
       }
     }, 3000);
-  };
+  // };
 };
 
 

@@ -146,7 +146,7 @@ nav ul ul li a:hover {
 }
 
 .nose img {
-  width: calc(42vw + 6 * ((100vw - 450px) / 680));
+  width: calc(42vw + 3 * ((100vw - 1200px) / 680));
   max-width: 700px;
   bottom: 17vh;
   right: 5.6vw;
@@ -312,7 +312,7 @@ nav ul ul li a:hover {
     border-width: 20px 12px 0px 12px;
     border-color: #3E3E3E transparent transparent transparent;
     position: absolute;
-    top: 20px;
+    top: 2.1vh;
     margin-left: 10px;
     transition: 0.5s;
   }
@@ -389,7 +389,6 @@ nav ul ul li a:hover {
     border-bottom: 2px solid;
   }
 
-
   /* section1 */
   .purpleInput {
     font-size: 24px;
@@ -400,7 +399,7 @@ nav ul ul li a:hover {
   .nose img {
     bottom: 36%;
     right: 2.8%;
-    width: calc(420px + 60 * ((100vw - 768px) / 300));
+    width: calc(410px + 60 * ((100vw - 768px) / 300));
     max-width: 654px;
   }
 
@@ -416,6 +415,68 @@ nav ul ul li a:hover {
     left: 50vw;
     bottom: 23.7%;
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nose img {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25.75vh;
+    width: calc(373px + 30 * ((100vw - 375px) / 300));
+  }
+
+  .title img{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 43.7vh;
+    width: calc(303px + 100 * ((100vw - 375px) / 300));
+  }
+
+  .section1 .purpleInput {
+    bottom: 14.67vh;
+  }
+
+  nav > ul > li:not(:first-child) {
+    margin-top: 2.69vh;
+  }
+
+  nav > ul > li:first-child {
+    margin-top: 8.53vh;
+  }
+
+  nav ul li a {
+    font-size: 24px;
+  }
+
+  .blackTri {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 17px 10px 0px 10px;
+    border-color: #3E3E3E transparent transparent transparent;
+    position: absolute;
+    top: 12px;
+    margin-left: 10px;
+    transition: 0.5s;
+  }
+
+  .hamburger {
+    padding-right: 12vw;
+  }
+
+  .line:not(:first-child) {
+    margin-top: 1vh;
+  }
+
+  nav ul ul {
+    padding: 20px 0;
+    width: 168px;
+    border-radius: 30px;
+  }
+
+  nav ul ul li a{
+    font-size: 18px;
   }
 }
 
@@ -461,7 +522,6 @@ nav ul ul li a:hover {
   align-items: center;
   justify-content: space-between;
   align-items: center;
-  border-radius: 30px;
   letter-spacing: 3px;
   transition: .5s;
 }
@@ -579,6 +639,7 @@ nav ul ul li a:hover {
   .uppersection2 {
     width: 100%;
     margin: 0;
+    border-radius: 0;
   }
 
   .arrow {
@@ -587,9 +648,6 @@ nav ul ul li a:hover {
 
   .webBulletin {
     display: none;
-  }
-
-  .bulletin {
   }
 
   .buInfo {
@@ -650,7 +708,30 @@ nav ul ul li a:hover {
     margin-right: 32.86px;
     /* 第三張會蓋到字 */
   }
+}
 
+@media screen and (max-width: 768px) {
+  .BulletinIpad p {
+    font-size: 24px;
+    margin-bottom: 2.55vh;
+  }
+
+  .BulletinIpad a{
+    font-size: 14px;
+  }
+
+  .buInfoIpad p {
+    font-size: 36px;
+    top: 3vh;
+    padding-left: 5.85%;
+  }
+
+  .buInfoIpad span {
+    font-size: 18px;
+    position: absolute;
+    bottom: 2vh;
+    padding-left: 5.85%;
+  }
 }
 
 /* .navigation-manual {
@@ -987,7 +1068,7 @@ nav ul ul li a:hover {
   }
 
   .talk {
-    width: 89.3%;
+    width: 89.3vw;
     padding: 4.7vh 0;
     padding-left: 4.7vw;
     font-size: 36px;
@@ -1012,6 +1093,49 @@ nav ul ul li a:hover {
     left: 0;
     right: 0;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .circleBlock{
+    width: 84vw;
+  }
+
+  .circle, .circle input  {
+    font-size: 18px;
+  }
+
+  .circleBlock:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  .circleBlock .circleSelected{
+    transform:scale(1.4375);
+    font-size: 16.7px;
+    letter-spacing: 0;
+  }
+
+  .adoptInputIpad {
+    margin-top: 3vh;
+  }
+
+  .recBtn:first-child {
+    margin-top: 3vh;
+  }
+
+  .talkBlock {
+    margin-top: 5.45vh;
+  }
+
+  .recBtn, .recBlock input, .talk, .talk p {
+    font-size: calc( 18px + 4 * ((100vw - 375px) / 200))
+  }
+
+  .adoptInputIpad {
+    width: 41.3vw;
+    height: 15.73vw;
+    border-radius: 5.3vw;
+    font-size: calc(24px + 6 * ((100vw - 375px) / 200));
   }
 }
 
@@ -1148,6 +1272,36 @@ nav ul ul li a:hover {
 
   .rightFooter a {
     color: #3E3E3E;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 7.48vh;
+    padding: 3vh 0;
+  }
+
+  .leftFooter {
+    align-items: center;
+    margin-top: 2vh;
+  }
+
+  .leftFooter input {
+    width: 34.9vw;
+    height: 10.93vw;
+    max-width: 288.7px;
+    max-height: 84px;
+    border-radius: 8vw;
+    font-size: calc( 20px + 5 * ((100vw - 375px) / 200));
+    margin-bottom: 3.5vh;
+  }
+
+  .rightFooter p {
+    font-size: calc( 14px + 5 * ((100vw - 375px) / 200))
+  }
+
+  .rightFooter p:not(:first-child) {
+    margin-top: 2vh;
   }
 }
 
