@@ -221,7 +221,7 @@ gesuredZone.addEventListener('touchend', function(event) {
 
 function handleGesure() {
   if (touchendX - touchstartX > 5) {
-    sectionIndex = ( sectionIndex > 0) ? sectionIndex - 1 : 0;
+    sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0;
     setIndex();
     indicatorParentsAdd();
   };

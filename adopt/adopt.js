@@ -56,15 +56,8 @@ $(document).ready(function(){
     $("body").css("overflow", "auto");
   });
 
-  // cleanSection
-  // $('.choseInside > .choseList').each(function(index){
-  //   $(this).click(function(){
-  //     $('.choosenSection').append('<div class="choosenItem"></div>');
-  //     $('.choosenItem:eq(0)').text(this);
-  //   });
-  // });
 
-
+// 創造空set、空attribute，利用它們判斷是否已經新增
   const checkValue = new Set();
 
   $('.choseInside > .choseList').click(function() {

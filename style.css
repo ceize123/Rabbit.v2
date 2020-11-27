@@ -391,9 +391,12 @@ nav ul ul li a:hover {
 
   /* section1 */
   .purpleInput {
-    font-size: 24px;
-    width: 174px;
-    height: 65px;
+    font-size: calc( 24px + 5 * ((100vw - 768px) / 300));
+    width: 22.65vw;
+    height: 8.6vw;
+    max-width: 272px;
+    max-height: 103px;
+    border-radius: 2.6vw;
   }
 
   .nose img {
@@ -894,8 +897,6 @@ nav ul ul li a:hover {
 
 .adoptInput {
   margin-top: 3.6vh;
-  padding-top: 2.3%;
-  padding-bottom: 2.3%;
 }
 
 .adoptInputIpad {
@@ -1030,15 +1031,7 @@ nav ul ul li a:hover {
   }
 
   .adoptInputIpad {
-    border: solid #C03178;
     display: block;
-    width: 43.88vw;
-    height: 16.6vw;
-    border-radius: 20px;
-    font-size: 48px;
-    background-color: #C03178;
-    cursor: pointer;
-    color: #fff;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 6.9vh;
@@ -1242,12 +1235,13 @@ nav ul ul li a:hover {
   .leftFooter input {
     border: solid #C03178;
     display: block;
-    width: 34.9vw;
-    height: 9.376vw;
-    max-width: 348px;
-    max-height: 93.75px;
-    border-radius: 30px;
-    font-size: 36px;
+    width: 22.65vw;
+    height: 8.6vw;
+    max-width: 272px;
+    max-height: 103px;
+    border-radius: 2.6vw;
+    font-size: calc(24px + 5 * ((100vw - 768px) / 300));
+    box-shadow: none;
     background-color: #C03178;
     cursor: pointer;
     color: #fff;

@@ -933,12 +933,13 @@ input[type="checkbox"]:checked:after {
 
   .leftFooter input {
     display: block;
-    width: 34.9vw;
-    height: 9.376vw;
-    max-width: 348px;
-    max-height: 93.75px;
-    border-radius: 30px;
-    font-size: 36px;
+    width: 22.65vw;
+    height: 8.6vw;
+    max-width: 272px;
+    max-height: 103px;
+    border-radius: 2.6vw;
+    font-size: calc(24px + 5 * ((100vw - 768px) / 300));
+    box-shadow: none;
     background-color: #C03178;
     cursor: pointer;
     color: #fff;
