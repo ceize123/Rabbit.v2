@@ -436,6 +436,13 @@ nav ul ul li a:hover {
     width: calc(303px + 100 * ((100vw - 375px) / 300));
   }
 
+  .purpleInput {
+    width: 41.3vw;
+    height: 15.73vw;
+    border-radius: 5.3vw;
+    font-size: 24px;
+  }
+
   .section1 .purpleInput {
     bottom: 14.67vh;
   }
@@ -1138,13 +1145,6 @@ nav ul ul li a:hover {
 
   .recBtn, .recBlock input, .talk, .talk p {
     font-size: calc( 18px + 4 * ((100vw - 375px) / 200))
-  }
-
-  .adoptInputIpad {
-    width: 41.3vw;
-    height: 15.73vw;
-    border-radius: 5.3vw;
-    font-size: calc(24px + 6 * ((100vw - 375px) / 200));
   }
 }
 

@@ -531,7 +531,7 @@ nav ul ul li a:hover {
     font-size: calc(18px + 3 * ((100vw - 768px) / 500));
   }
 
-  .infoUl ul li {
+  .infoUl ul li:not(:last-child) {
     margin-bottom: 1.95vh;
   }
 
